@@ -479,21 +479,27 @@ a {
   color:#36c;
 }
 
+button{
+    border:0;
+    border-radius: 5px;
+}
+
 .large-hero{
-  border-bottom:10px solid #123241;
+  border-bottom:10px solid #00d089;
   position: relative;
+    max-height: 700px;
+    overflow: hidden;
 
 }
 
 .large-hero__text-content{
   padding-top:88px;
   position: absolute;
-  top:50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 0;
-  width: 100%;
-  text-align: center;
+  top:0;
+  right:0;
+  bottom:0;
+  left: 0;/*transform: translateY(-50%);*/
+  background-color: rgba(34,37,37,.25);
 }
 
 @media(min-width:800px) {
@@ -509,9 +515,13 @@ a {
 
 .large-hero__title{
   font-weight:300;
-  color:#123241;
+  color:#FFF;
   font-size:2.4rem;
   margin:0;
+  text-align: left;
+  border-left:2px solid #00d089;
+  padding-left:15px;
+  position: absolute;
 }
 
 @media(min-width:530px) {
@@ -552,6 +562,11 @@ a {
   }
 }
 
+#large-hero__thumbnail{
+    margin-top:-20px;
+    margin-left:.8px;
+}
+
 .btn{
   background-color:#123241;
   color:#FFF;
@@ -562,6 +577,10 @@ a {
 
 .btn--orange{
   background:#d59541;
+}
+
+.btn--green{
+  background-color:#00d089;
 }
 
 .btn--large{
@@ -1156,11 +1175,11 @@ instead edit gulp/temp/sprite
 
   .site-header {
     position: fixed;
-    background-color: rgba(18,50,65,.3);
+    background-color: rgba(18,50,65,.85);
   }
 
   .site-header--dark {
-    background-color: rgba(23,51,72, .85);
+    background-color: rgba(23,51,72, .95);
   }
 }
 
@@ -1183,7 +1202,9 @@ instead edit gulp/temp/sprite
   -webkit-transform-origin: 50% 0%;
           transform-origin: 50% 0%;
   background:#123241;
-  padding:25px 36px;
+  padding:.625rem;
+  height:8.75rem;
+  border-radius: 0 0 .3125rem .3125rem;
 }
 
 @media(min-width:800px) {
@@ -1203,6 +1224,8 @@ instead edit gulp/temp/sprite
 .site-header__logo__graphic{
   text-indent: -9999px;
 }
+
+/*mobile menu*/
 
 .site-header__menu-icon{
   width:20px;
@@ -1370,6 +1393,7 @@ instead edit gulp/temp/sprite
   padding:5px 8px;
   font-size:1.8rem;
   background-color: rgba(18,50,65,.5);
+  display: block;
 }
 
 @media(min-width:800px) {

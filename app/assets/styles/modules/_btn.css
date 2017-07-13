@@ -6,7 +6,12 @@
   display: inline-block;
   &--orange{
     background:$mainOrange;
+    }
+
+  &--green{
+      background-color:$mainGreen;
   }
+      
   &--large{
     padding: 1.1rem 1.9rem;
     @mixin atSmall{

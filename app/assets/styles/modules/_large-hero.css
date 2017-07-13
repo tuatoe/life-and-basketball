@@ -1,15 +1,18 @@
 .large-hero{
-  border-bottom:10px solid $mainBlue;
+  border-bottom:10px solid $mainGreen;
   position: relative;
+    max-height: 700px;
+    overflow: hidden;
 
   &__text-content{
-    padding-top:88px;
+      padding-top:88px;
       position: absolute;
-      top:50%;
-      transform: translateY(-50%);
+      top:0;
+      right:0;
+      bottom:0;
       left: 0;
-      width: 100%;
-      text-align: center;
+      /*transform: translateY(-50%);*/
+      background-color: rgba(34,37,37,.25);
       @mixin atMedium{
         padding-top:60px;
       }
@@ -21,9 +24,14 @@
 
   &__title{
     font-weight:300;
-    color:$mainBlue;
+    color:#FFF;
     font-size:2.4rem;
     margin:0;
+      text-align: left;
+      border-left:2px solid $mainGreen;
+      padding-left:15px;
+      position: absolute;
+      
 
     @mixin atSmall{
       font-size:4.8rem;
@@ -55,4 +63,9 @@
 
   }
 
+}
+
+#large-hero__thumbnail{
+    margin-top:-20px;
+    margin-left:.8px;
 }

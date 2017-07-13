@@ -13,3 +13,8 @@ img
 a {
   color:#36c;
 }
+
+button{
+    border:0;
+    border-radius: 5px;
+}
