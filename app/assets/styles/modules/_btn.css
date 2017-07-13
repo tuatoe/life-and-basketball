@@ -4,12 +4,19 @@
   text-decoration: none;
   padding: .75rem 1.2rem ;
   display: inline-block;
+    cursor: pointer;
   &--orange{
     background:$mainOrange;
+       &:hover{
+          background-color:$mainGreen;
+      }
     }
 
   &--green{
       background-color:$mainGreen;
+      &:hover{
+          background-color:$mainOrange;
+      }
   }
       
   &--large{

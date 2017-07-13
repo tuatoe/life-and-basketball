@@ -44,6 +44,9 @@
     font-size:1.8rem;
     background-color: rgba($mainBlue,.5);
       display: block;
+      &:hover{
+          color:$mainOrange;
+      }
 
     @mixin atMedium{
       font-size:1rem;

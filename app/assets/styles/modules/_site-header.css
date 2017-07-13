@@ -1,9 +1,11 @@
 .site-header{
-  padding:10px 0;
+  padding:15px 0;
   position: absolute;
   z-index: 2;
   width:100%;
   transition: background-color .3s ease-out;
+    border-bottom:1px solid $mainGreen;
+    
 
   &--is-expanded{
     background-color:rgba($mainBlue, .55);
@@ -32,7 +34,7 @@
     transform: translateX(-50%) scale(.8);
     transition: transform .3s ease-out;
     transform-origin: 50% 0%;
-    background:$mainBlue;
+    background:$mainGreen;
     padding:.625rem;
       height:8.75rem;
       border-radius: 0 0 .3125rem .3125rem;

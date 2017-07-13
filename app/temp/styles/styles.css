@@ -476,7 +476,7 @@ img
 }
 
 a {
-  color:#36c;
+  color:#d59541;
 }
 
 button{
@@ -487,9 +487,23 @@ button{
 .large-hero{
   border-bottom:10px solid #00d089;
   position: relative;
-    max-height: 700px;
+    max-height: 400px;
     overflow: hidden;
 
+}
+
+@media(min-width:530px) {
+
+  .large-hero {
+    max-height: 400px;
+  }
+}
+
+@media(min-width:530px) {
+
+  .large-hero {
+    max-height: 700px;
+  }
 }
 
 .large-hero__text-content{
@@ -513,21 +527,39 @@ button{
   display: block;
 }
 
+.large-hero__btn{
+  position: absolute;
+  left:50%;
+  -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
+  top:80%;
+}
+
 .large-hero__title{
   font-weight:300;
   color:#FFF;
-  font-size:2.4rem;
+  font-size:1.6rem;
   margin:0;
   text-align: left;
   border-left:2px solid #00d089;
   padding-left:15px;
   position: absolute;
+  top:40%;
 }
 
 @media(min-width:530px) {
 
   .large-hero__title {
-    font-size: 4.8rem;
+    font-size: 3rem;
+    top: 30%;
+  }
+}
+
+@media(min-width:800px) {
+
+  .large-hero__title {
+    width: 56.25rem;
+    font-size: 3.8rem;
   }
 }
 
@@ -564,6 +596,7 @@ button{
 
 #large-hero__thumbnail{
     margin-top:-20px;
+    width:100%;
     margin-left:.8px;
 }
 
@@ -573,14 +606,23 @@ button{
   text-decoration: none;
   padding: .75rem 1.2rem ;
   display: inline-block;
+    cursor: pointer;
 }
 
 .btn--orange{
   background:#d59541;
 }
 
+.btn--orange:hover{
+  background-color:#00d089;
+}
+
 .btn--green{
   background-color:#00d089;
+}
+
+.btn--green:hover{
+  background-color:#d59541;
 }
 
 .btn--large{
@@ -1159,11 +1201,12 @@ instead edit gulp/temp/sprite
 }
 
 .site-header{
-  padding:10px 0;
+  padding:15px 0;
   position: absolute;
   z-index: 2;
   width:100%;
   transition: background-color .3s ease-out;
+    border-bottom:1px solid #00d089;
 
 }
 
@@ -1201,7 +1244,7 @@ instead edit gulp/temp/sprite
   transition: transform .3s ease-out, -webkit-transform .3s ease-out;
   -webkit-transform-origin: 50% 0%;
           transform-origin: 50% 0%;
-  background:#123241;
+  background:#00d089;
   padding:.625rem;
   height:8.75rem;
   border-radius: 0 0 .3125rem .3125rem;
@@ -1394,6 +1437,10 @@ instead edit gulp/temp/sprite
   font-size:1.8rem;
   background-color: rgba(18,50,65,.5);
   display: block;
+}
+
+.primary-nav a:hover{
+  color:#d59541;
 }
 
 @media(min-width:800px) {
