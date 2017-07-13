@@ -480,7 +480,7 @@ a {
 }
 
 .large-hero{
-  border-bottom:10px solid #2f5572;
+  border-bottom:10px solid #123241;
   position: relative;
 
 }
@@ -509,7 +509,7 @@ a {
 
 .large-hero__title{
   font-weight:300;
-  color:#2f5572;
+  color:#123241;
   font-size:2.4rem;
   margin:0;
 }
@@ -523,7 +523,7 @@ a {
 
 .large-hero__sub-title{
   font-weight:300;
-  color:#2f5572;
+  color:#123241;
   font-size:1.5rem;
   margin:0;
 }
@@ -553,7 +553,7 @@ a {
 }
 
 .btn{
-  background-color:#2f5572;
+  background-color:#123241;
   color:#FFF;
   text-decoration: none;
   padding: .75rem 1.2rem ;
@@ -668,7 +668,7 @@ a {
 }
 
 .page-section--blue{
-  background-color:#2f5572;
+  background-color:#123241;
   color:#FFF;
 }
 
@@ -686,7 +686,7 @@ a {
 
 .headline{
   font-weight: 300;
-  color:#2f5572;
+  color:#123241;
     font-size:1.9rem;
 }
 
@@ -919,7 +919,7 @@ a {
 }
 
 .section-title--blue{
-  color:#2f5572;
+  color:#123241;
 }
 
 .section-title--less-margin{
@@ -1018,7 +1018,7 @@ a {
 }
 
 .testimonial__title{
-  color:#2f5572;
+  color:#123241;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 500;
@@ -1118,7 +1118,7 @@ instead edit gulp/temp/sprite
   }
 
 .site-footer{
-  background-color:#2f5572;
+  background-color:#123241;
   color:#FFF;
   padding: .5rem 0;
   text-align: center;
@@ -1149,14 +1149,14 @@ instead edit gulp/temp/sprite
 }
 
 .site-header--is-expanded{
-  background-color: rgba(47,85,114, .55);
+  background-color: rgba(18,50,65, .55);
 }
 
 @media(min-width:800px) {
 
   .site-header {
     position: fixed;
-    background-color: rgba(47,85,114,.3);
+    background-color: rgba(18,50,65,.3);
   }
 
   .site-header--dark {
@@ -1182,7 +1182,7 @@ instead edit gulp/temp/sprite
   transition: transform .3s ease-out, -webkit-transform .3s ease-out;
   -webkit-transform-origin: 50% 0%;
           transform-origin: 50% 0%;
-  background:#2f5572;
+  background:#123241;
   padding:25px 36px;
 }
 
@@ -1369,7 +1369,7 @@ instead edit gulp/temp/sprite
   font-weight: 300;
   padding:5px 8px;
   font-size:1.8rem;
-  background-color: rgba(47,85,114,.5);
+  background-color: rgba(18,50,65,.5);
 }
 
 @media(min-width:800px) {
@@ -1444,7 +1444,7 @@ instead edit gulp/temp/sprite
           transform: scaleX(1.2);
   -webkit-transform-origin: 100% 0;
           transform-origin: 100% 0;
-  color:#2f5572;
+  color:#123241;
 }
 
 .modal__close:hover{
