@@ -762,14 +762,13 @@ h1,h2 {
 
 .page-section--our-success{
   background-color:#e0e6ef;
-}
-
-@media(min-width:1010px) {
-
-  .page-section--our-success.lazyloaded {
-    background: url('../../assets/images/our-success-bg.jpg') top center no-repeat;
-    background-size: cover;
-  }
+  background:url('../../assets/images/our-success-bg.jpg') top center no-repeat;
+  background-size:cover;/*@mixin atLarge{
+      &.lazyloaded{
+        background:url('../../assets/images/our-success-bg.jpg') top center no-repeat;
+        background-size:cover;
+      }
+    }*/
 }
 
 .headline{
