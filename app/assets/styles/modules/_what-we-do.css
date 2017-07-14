@@ -1,0 +1,42 @@
+.what-we-do{
+   
+    p {
+        color:#999;
+        text-align: center;
+        font-size: .9rem;
+    }
+    
+    h2{
+        font-size:3rem;
+        text-align: center;
+        color:$mainBlue;
+        margin-bottom:1.2em;
+    }
+    
+    h3 {
+        text-align: center;
+        font-size:1.3rem;
+    }
+    
+     &__content {
+        p {
+        color:#999;
+        font-size: 2rem;
+        line-height: 1.35;
+        padding-bottom:25px;
+        }
+    }
+    
+    &__green-bg {
+        background-color:$mainGreen;
+        p {
+            color:#FFF;
+        }
+    }
+    .fa {
+        width:2.625rem;
+        margin:.9375rem auto;
+        display: block;
+        
+    }
+}

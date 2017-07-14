@@ -1,0 +1,16 @@
+.fa{
+    color:#FFF;
+    font-size:1.5rem;
+    &--green{
+        color:$mainGreen;
+    }
+    &--orange{
+        color:$mainOrange;
+    }
+}
+
+.fa-edit:before, .fa-heart:before,
+.fa-star:before,.fa-pencil:before, 
+.fa-book:before,.fa-check-circle-o:before{
+    font-size:3rem;
+}
