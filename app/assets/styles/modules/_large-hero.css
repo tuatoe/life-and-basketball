@@ -19,7 +19,7 @@
       bottom:0;
       left: 0;
       /*transform: translateY(-50%);*/
-      background-color: rgba(34,37,37,.25);
+      background-color: rgba(34,37,37,.6);
       @mixin atMedium{
         padding-top:60px;
       }
