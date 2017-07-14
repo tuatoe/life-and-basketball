@@ -737,14 +737,37 @@ h1,h2 {
   color:#FFF;
 }
 
-.page-section--testimonials{
+.page-section--green{
+  background-color:#00d089
+}
+
+.page-section__title{
+  font-size:3rem;
+  text-align: center;
+  color:#123241;
+  margin-bottom:1.2em;
+}
+
+.page-section__title--green-text{
+  color:#00d089;
+}
+
+.page-section__title--blue-text{
+  color:#123241;
+}
+
+.page-section__title--white-text{
+  color:#FFF;
+}
+
+.page-section--our-success{
   background-color:#e0e6ef;
 }
 
 @media(min-width:1010px) {
 
-  .page-section--testimonials.lazyloaded {
-    background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
+  .page-section--our-success.lazyloaded {
+    background: url('../../assets/images/our-success-bg.jpg') top center no-repeat;
     background-size: cover;
   }
 }
@@ -841,7 +864,15 @@ h1,h2 {
   margin-bottom:1rem;
 }
 
+.row--bottom-margin{
+  margin-bottom:2rem;
+}
+
 @media(min-width:800px) {
+
+  .row--bottom-margin {
+    margin-bottom: 4rem;
+  }
 
   .row__b-margin-until-medium {
     margin-bottom: 0;
@@ -947,17 +978,17 @@ h1,h2 {
   text-align: center;
 }
 
-@media(min-width:530px) {
+.generic-content-container--text-align-left p{
+  text-align: left;
+}
 
-  .generic-content-container p {
-    text-align: left;
-  }
+.generic-content-container--white p{
+  color:#FFF;
 }
 
 @media(min-width:530px) {
 
   .generic-content-container {
-    text-align: left;
     font-size: 1.125rem;
   }
 }
@@ -1384,26 +1415,25 @@ h1,h2 {
 .what-we-do p {
   color:#999;
   text-align: center;
-  font-size: .9rem;
-}
-
-.what-we-do h2{
-  font-size:3rem;
-  text-align: center;
-  color:#123241;
-  margin-bottom:1.2em;
-}
-
-.what-we-do h3 {
-  text-align: center;
-  font-size:1.3rem;
 }
 
 .what-we-do__content p {
-  color:#999;
+  padding:5px 25px;
+}
+
+.what-we-do__content--intro p{
   font-size: 2rem;
   line-height: 1.35;
-  padding-bottom:25px;
+}
+
+.what-we-do__content__title{
+  text-align: center;
+  font-size:1.3rem;
+  color:#999;
+}
+
+.what-we-do__content__title-white{
+  color:#FFF;
 }
 
 .what-we-do__green-bg {
@@ -1414,8 +1444,65 @@ h1,h2 {
   color:#FFF;
 }
 
+.what-we-do__white-bg{
+  background-color:#FFF;
+}
+
 .what-we-do .fa {
   width:2.625rem;
   margin:.9375rem auto;
   display: block;
 }
+
+.our-success{
+  background-color: rgba(0,208,137,1);
+
+  margin-bottom:98px;
+}
+
+@media(min-width:1010px) {
+
+  .our-success {
+    margin-bottom: 0;
+    padding: 0 1.8125rem 1px 1.8125rem;
+  }
+}
+
+.our-success--last{
+  margin-bottom: 0;
+}
+
+.our-success__photo{
+  border-radius:80px;
+  overflow: hidden;
+  width:160px;
+  height:160px;
+  margin:0 auto -80px auto;
+  border:6px solid rgba(255,255,255,.8);
+  position: relative;
+  top:-80px;
+}
+
+.our-success__title{
+  color:#123241;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin:1rem 0 0 0;
+}
+
+.our-success__subtitle{
+  color:#FFF;
+  text-align: center;
+  font-weight: 400;
+  font-size: .9375rem;
+  margin:.25rem 0 1rem 0;
+  text-align: center;
+  font-size:1.1rem;
+}
+
+.our-success__content{
+  color:#FFF;
+  text-align: center;
+}
+

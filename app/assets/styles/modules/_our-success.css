@@ -1,6 +1,6 @@
-.testimonial{
-  background-color:rgba(255,255,255,.8);
-  padding:0 18px 1px 18px;
+.our-success{
+  background-color:rgba($mainGreen,1);
+
   margin-bottom:98px;
 
   @mixin atLarge{
@@ -29,13 +29,19 @@
     text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
-    margin:0;
+    margin:1rem 0 0 0;
   }
   &__subtitle{
-    color:$mainOrange;
+    color:#FFF;
     text-align: center;
     font-weight: 400;
     font-size: .9375rem;
     margin:.25rem 0 1rem 0;
+      text-align: center;
+      font-size:1.1rem;
   }
+    &__content{
+        color:#FFF;
+        text-align: center;
+    }
 }

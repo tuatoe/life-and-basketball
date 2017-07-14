@@ -33,7 +33,16 @@
 &__b-margin-until-medium{
   margin-bottom:1rem;
 }
+    
+   &--bottom-margin{
+    margin-bottom:2rem;
+ } 
+
   @mixin atMedium {
+      
+ &--bottom-margin{
+    margin-bottom:4rem;
+ } 
 
     &__b-margin-until-medium {
         margin-bottom:0;

@@ -4,12 +4,21 @@
     line-height: 1.65;
     margin:0 0 1.8rem 0;
     text-align: center;
-    @mixin atSmall{
-      text-align: left;
-    }
+   
   }
+    
+ &--text-align-left{
+    p{
+        text-align: left;
+    }
+}
+    
+    &--white{
+        p{
+            color:#FFF;
+        }
+    }
 @mixin atSmall {
-    text-align: left;
     font-size:1.125rem;
 }
   p a{
