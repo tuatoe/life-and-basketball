@@ -1506,3 +1506,35 @@ h1,h2 {
   text-align: center;
 }
 
+.footer{
+    text-align: center;
+    color:#FFF;
+}
+
+ul.social-icons{
+    list-style: none;
+    text-align: center;
+    width:350px;
+    margin:0 auto;
+    position: relative;
+}
+
+ul.social-icons li{
+  padding:10px;
+  border:1px solid #00d089;
+  float:left;
+  width:52px;
+  height: 48px;
+  margin-right:25px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+ul.social-icons li:last-child{
+  margin-right:0;
+}
+
+ul.social-icons li:hover{
+  border:1px solid #d59541;
+  color:#d59541;
+}
