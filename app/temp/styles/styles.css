@@ -488,6 +488,10 @@ h1,h2 {
     font-family: 'Oswald', sans-serif;
 }
 
+p{
+    font-size:.875rem /*16px / 14px = .875rem*/
+}
+
 .large-hero{
   border-bottom:10px solid #00d089;
   position: relative;
