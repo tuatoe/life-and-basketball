@@ -21,6 +21,12 @@ button{
 h1,h2 {
     font-family: 'Oswald', sans-serif;
 }
+h2{
+    font-size:3.75rem;
+}
+h3 {
+    font-size:1.5rem;
+}
 p{
     font-size:.875rem /*16px / 14px = .875rem*/
 }
