@@ -1519,7 +1519,6 @@ p{
 
 .modal__inner {
   position: absolute;
-  width: 700px;
   top: 20%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);

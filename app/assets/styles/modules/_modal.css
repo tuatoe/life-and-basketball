@@ -19,7 +19,6 @@
 
   &__inner {
     position: absolute;
-    width: 700px;
     top: 20%;
     transform: translateY(-50%);
     margin: 0 auto;
