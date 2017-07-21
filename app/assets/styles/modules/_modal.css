@@ -19,9 +19,12 @@
 
   &__inner {
     position: absolute;
-    width:100%;
-    top:50%;
+    width: 700px;
+    top: 20%;
     transform: translateY(-50%);
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
   &__description{
     text-align: center;

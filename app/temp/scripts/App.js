@@ -11249,6 +11249,8 @@
 	    this.openModalButton = (0, _jquery2.default)('.open-modal');
 	    this.modal = (0, _jquery2.default)('.modal');
 	    this.closeModalButton = (0, _jquery2.default)('.modal__close');
+	    this.iframe = (0, _jquery2.default)('#player')[0];
+	    this.player = (0, _jquery2.default)(this.iframe);
 	    this.events();
 	  }
 
@@ -11257,9 +11259,20 @@
 	    value: function events() {
 	      //clicking the open modal button
 	      this.openModalButton.click(this.openModal.bind(this));
-
+	      this.openModalButton.on('click', function () {
+	        var iframe = (0, _jquery2.default)('#life-and-basketball')[0];
+	        var player = $f(iframe);
+	        player.api('play');
+	      });
 	      //clicking the x close modal button
 	      this.closeModalButton.click(this.closeModal.bind(this));
+	      this.closeModalButton.on('click', function () {
+	        //$('.modal .modal__inner iframe').attr('src', $('.modal .modal__inner iframe').attr('src')); 
+	        var iframe = (0, _jquery2.default)('#life-and-basketball')[0];
+	        var player = $f(iframe);
+	        player.api('pause');
+	        location.reload();
+	      });
 
 	      //pushes any key
 	      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
