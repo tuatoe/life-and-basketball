@@ -1,39 +1,57 @@
 .how-you-can-help {
+    &__tab-content{
+        display: none;
+        
+        &.how-you-can-help__nav-tabs--current-tab{
+            display: block;
+        }
+    }
+    
+   
+    
     &__nav-tabs {
         @mixin clearfix;
         list-style: none;
-        width:670px;
+        width:725px;
         margin:0 auto 3rem auto;
         
-        li {
+        &__link{
             float:left;
             font-family: 'Oswald', sans-serif;
-            border-right:.3rem $mainGreen;
-            
+            border-right:2px solid $mainGreen;
+            cursor: pointer;
+            font-size:1.5rem;
+            background-color:#FFF;
+            padding:1.5rem;
+
             a {
-                padding:1.25rem 1rem;
-                background-color:#FFF;
+                
                 color:$mainBlue;
                 text-decoration: none;
-                font-size:1.5rem;
                 text-align: center;
-                cursor: pointer;
-                 border-right:2px solid $mainGreen;
-                &:hover {
-                     background-color: $mainBlue;
-                     color:#FFF;
+            }
+           
+            
+            
+            &--current {
+                background-color:$mainBlue;
+
+                a {
+                    color:#FFF;
                 }
+            }
+            
+            &:hover{
+               
+                     background-color: $mainBlue;
+                a {
+                    color:#FFF;
+                }
+              
             }
            
         }
         
-        li&__is-visible{
-                
-            a {
-                background-color: $mainBlue;
-                color:#FFF;
-            }
-        }
     }
 }
 

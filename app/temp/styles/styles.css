@@ -1696,9 +1696,17 @@ ul.social-icons li:hover{
   color:#d59541;
 }
 
+.how-you-can-help__tab-content{
+  display: none;
+}
+
+.how-you-can-help__tab-content.how-you-can-help__nav-tabs--current-tab{
+  display: block;
+}
+
 .how-you-can-help__nav-tabs {
   list-style: none;
-  width:670px;
+  width:725px;
   margin:0 auto 3rem auto;
 }
 
@@ -1708,29 +1716,34 @@ ul.social-icons li:hover{
   display: table;
 }
 
-.how-you-can-help__nav-tabs li {
+.how-you-can-help__nav-tabs__link{
   float:left;
   font-family: 'Oswald', sans-serif;
-  border-right:.3rem #00d089;
+  border-right:2px solid #00d089;
+  cursor: pointer;
+  font-size:1.5rem;
+  background-color:#FFF;
+  padding:1.5rem;
 }
 
-.how-you-can-help__nav-tabs li a {
-  padding:1.25rem 1rem;
-  background-color:#FFF;
+.how-you-can-help__nav-tabs__link a {
   color:#123241;
   text-decoration: none;
-  font-size:1.5rem;
   text-align: center;
-  cursor: pointer;
-  border-right:2px solid #00d089;
 }
 
-.how-you-can-help__nav-tabs li a:hover {
-  background-color: #123241;
+.how-you-can-help__nav-tabs__link--current {
+  background-color:#123241;
+}
+
+.how-you-can-help__nav-tabs__link--current a {
   color:#FFF;
 }
 
-li.how-you-can-help__nav-tabs__is-visible a {
+.how-you-can-help__nav-tabs__link:hover{
   background-color: #123241;
+}
+
+.how-you-can-help__nav-tabs__link:hover a {
   color:#FFF;
 }
