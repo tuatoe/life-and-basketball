@@ -28,6 +28,8 @@
         text-align: center;
         color:$mainBlue;
         margin-bottom:1.2em;
+     
+      
         &--green-text{
             color:$mainGreen;
         }
