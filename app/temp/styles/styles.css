@@ -649,50 +649,39 @@ p{
 }
 
 .large-hero__container__text-content__btn {
-  cursor: pointer;
-  color:#FFF;
-  position: relative;
   margin:0 auto;
-  left:44%;
-  -webkit-transform:translateX(-50%);
-          transform:translateX(-50%);
-  padding:.8rem 2.7rem .8rem .7rem !important;
-  width:10rem;
+  left:50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: relative;
+  padding:.8rem 2.5rem .8rem .8rem !important;
 }
 
 @media(min-width:800px) {
 
   .large-hero__container__text-content__btn {
-    position: absolute;
-    margin: 3.625rem auto;
-    text-align: center;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    margin: 2.5rem auto;
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 @media(min-width:1010px) {
 
   .large-hero__container__text-content__btn {
-    position: absolute;
-    top: 110%;
-    color: #FFF;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    left: 26%;
-    margin: 0;
+    float: left;
+    margin-left: 2.4rem;
+    margin-top: 1rem;
   }
 }
 
-.large-hero__container__text-content .fa-play{
+.large-hero__container__text-content .fa-play {
   position: absolute;
-  right: .90rem;
-  top: 50%;
+  top:50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  right:.6rem;
 }
 
 .large-hero__image{
@@ -732,6 +721,7 @@ p{
 
 .btn--large{
   padding: 1.1rem 1.9rem;
+  color:#FFF;
 }
 
 @media(min-width:530px) {
@@ -1415,7 +1405,7 @@ p{
 
   .primary-nav ul li a {
     cursor: pointer;
-    padding: 1.5625rem .625rem;
+    padding: 1.2rem .625rem;
     font-weight: bold;
     font-size: .875rem;
   }

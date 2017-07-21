@@ -111,42 +111,32 @@
           }
 
            &__btn {
-               cursor: pointer;
-               color:#FFF;
-               position: relative;
+               
                margin:0 auto;
-               left:44%;
-               transform:translateX(-50%);
-               padding:.8rem 2.7rem .8rem .7rem !important;
-               width:10rem;
-              
+               left:50%;
+               transform: translateX(-50%);
+               position: relative;
+               padding:.8rem 2.5rem .8rem .8rem !important;
                
                @mixin atMedium {
-                   position: absolute;
-                   margin:3.625rem auto;
-                   text-align: center;
-                   left:50%;
-                   transform:translateX(-50%);
+                   margin:2.5rem auto;
+                   left:0;
+                   transform: translateX(0);
                }
                
-               @mixin atLarge{
-                position: absolute;
-                top:110%;
-                color:#FFF;
-                display: inline-block;
-                cursor: pointer;
-                transform:translateY(-50%);
-                left:26%;
-                margin:0;
+               @mixin atLarge {
+                   float:left;
+                   margin-left:2.4rem;
+                   margin-top:1rem;
                }
             
           }
           
-          .fa-play{
-                 position: absolute;
-                right: .90rem;
-                top: 50%;
-                transform: translateY(-50%);
+          .fa-play {
+               position: absolute;
+               top:50%;
+               transform: translateY(-50%);
+               right:.6rem;
           }
 
         }
