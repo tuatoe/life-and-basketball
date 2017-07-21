@@ -1,7 +1,7 @@
 .primary-nav{
 
-  padding-top:20px;
-
+  padding-top:1.25rem;
+  position: relative;
   @mixin atMedium{
     padding-top:0;
   }
@@ -16,46 +16,97 @@
     margin:0;
     padding:0;
     @mixin clearfix;
-  }
-  li {
-    list-style: none;
-    display: inline-block;
-    padding-right:7px;
+    transition: all .3s ease-out;
+    position: relative;
+    z-index: 0;
+    li {
+        list-style: none;
+        display: inline-block;
+        padding-right:.4375rem;
 
-    @mixin atMedium{
-      padding-right:20px;
-      float:left;
-      display: block;
+        @mixin atMedium {
+        padding-right:1.25rem;
+        display: inline-block;
+        position: relative;
+            z-index: 1;
+            a {
+                cursor: pointer;
+                padding:1.5625rem .625rem;
+                font-weight: bold;
+                font-size: .875rem;
+                
+            }
+            
+            ul {
+                display: none;
+                background-color:#FFF; 
+
+            }
+        }
+        
+        &:hover ul {
+                display: block;
+                width: 10.3125rem;
+                text-align: left;
+                padding: .625rem;
+                position: absolute;
+                z-index: 9;
+                left:0;
+                top:1.875rem;
+                background-color: #FFF;
+             
+                li {
+                    color:#555;
+                    padding:.625rem;
+                    cursor: pointer;
+                
+                a {
+                    cursor: pointer;
+                }
+                
+                &:hover {
+                    color:$mainBlue;
+                }
+            }
+        }
     }
-  }
 
-  li:last-child{
-    padding-right:0;
-    @mixin atMedium{
-      padding-right: 20px;
+    li:last-child {
+        padding-right:0;
+        @mixin atMedium {
+        padding-right: 1.25rem;
+            
+        }
     }
-  }
+}
+ 
 
-  a {
+a {
     color:#FFF;
     text-decoration: none;
     font-weight: 300;
-    padding:5px 8px;
     font-size:1.8rem;
     background-color: rgba($mainBlue,.5);
-      display: block;
-      &:hover{
-          color:$mainOrange;
-      }
-
-    @mixin atMedium{
-      font-size:1rem;
-      padding:12px 0;
-      background-color: transparent;
-
-      &.is-current-link{
-        color:#fabb69;
-      }
+    display: block;
+    cursor: pointer;
+    
+    
+    &:hover{
+        background-color:$mainGreen;
+        color:#FFF;
     }
-  }
+
+    @mixin atMedium {
+        font-size:1rem;
+        padding:.75rem 0;
+        background-color: transparent;
+
+        &.is-current-link {
+        background-color:$mainGreen;
+        color:#FFF;
+            
+        }
+    }
+}
+
 }

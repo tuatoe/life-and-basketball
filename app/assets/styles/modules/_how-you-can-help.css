@@ -1,0 +1,39 @@
+.how-you-can-help {
+    &__nav-tabs {
+        @mixin clearfix;
+        list-style: none;
+        width:670px;
+        margin:0 auto 3rem auto;
+        
+        li {
+            float:left;
+            font-family: 'Oswald', sans-serif;
+            border-right:.3rem $mainGreen;
+            
+            a {
+                padding:1.25rem 1rem;
+                background-color:#FFF;
+                color:$mainBlue;
+                text-decoration: none;
+                font-size:1.5rem;
+                text-align: center;
+                cursor: pointer;
+                 border-right:2px solid $mainGreen;
+                &:hover {
+                     background-color: $mainBlue;
+                     color:#FFF;
+                }
+            }
+           
+        }
+        
+        li&__is-visible{
+                
+            a {
+                background-color: $mainBlue;
+                color:#FFF;
+            }
+        }
+    }
+}
+

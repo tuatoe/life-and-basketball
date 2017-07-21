@@ -1,5 +1,5 @@
 .large-hero{
-  border-bottom:10px solid $mainGreen;
+  border-bottom:2px solid $mainGreen;
   position: relative;
     max-height: 400px;
     overflow: hidden;

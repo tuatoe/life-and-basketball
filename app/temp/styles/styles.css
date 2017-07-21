@@ -501,7 +501,7 @@ p{
 }
 
 .large-hero{
-  border-bottom:10px solid #00d089;
+  border-bottom:2px solid #00d089;
   position: relative;
     max-height: 400px;
     overflow: hidden;
@@ -1148,7 +1148,6 @@ p{
 }
 
 .site-header{
-  padding:15px 0;
   position: absolute;
   z-index: 2;
   width:100%;
@@ -1159,7 +1158,7 @@ p{
 @media(min-width:800px) {
 
   .site-header {
-    border-bottom: 1px solid #00d089;
+    border-bottom: .3125rem solid #00d089;
   }
 }
 
@@ -1177,6 +1176,10 @@ p{
   .site-header--dark {
     background-color: rgba(23,51,72, .95);
   }
+}
+
+.site-header__btn-container{
+  margin-top:.8rem;
 }
 
 @media(min-width:800px) {
@@ -1242,11 +1245,11 @@ p{
 /*mobile menu*/
 
 .site-header__menu-icon{
-  width:20px;
-  height:19px;
+  width:1.25rem;
+  height:1.1875rem;
   position: absolute;
-  top:10px;
-  right:10px;
+  top:.625rem;
+  right:.625rem;
   z-index: 10;
 }
 
@@ -1255,8 +1258,8 @@ p{
   position: absolute;
   top:0;
   left:0;
-  width:20px;
-  height:3px;
+  width:1.25rem;
+  height:.1875rem;
   background-color:#FFF;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
@@ -1267,10 +1270,10 @@ p{
 
 .site-header__menu-icon__middle{
   position: absolute;
-  top:8px;
+  top:.5rem;
   left:0;
-  width:20px;
-  height:3px;
+  width:1.25rem;
+  height:1875rem;
   background-color:#FFF;
   transition: all .3s ease-out;
   -webkit-transform-origin: 0 50%;
@@ -1282,8 +1285,8 @@ p{
   position: absolute;
   bottom:0;
   left:0;
-  width:20px;
-  height:3px;
+  width:1.25rem;
+  height:1875rem;
   background-color:#FFF;
   -webkit-transform-origin: 0 100%;
           transform-origin: 0 100%;
@@ -1322,7 +1325,7 @@ p{
   transition: all .3s ease-out;
   position: relative;
   z-index: -10;
-  padding-top:90px;
+  padding-top:5.625rem;
   text-align: center;
 }
 
@@ -1346,7 +1349,9 @@ p{
 
 .primary-nav{
 
-  padding-top:20px;
+  padding-top:1.25rem;
+  position: relative;
+
 }
 
 @media(min-width:800px) {
@@ -1366,6 +1371,9 @@ p{
 .primary-nav ul {
   margin:0;
   padding:0;
+  transition: all .3s ease-out;
+  position: relative;
+  z-index: 0;
 }
 
 .primary-nav ul::after {
@@ -1374,29 +1382,68 @@ p{
   display: table;
 }
 
-.primary-nav li {
+.primary-nav ul li {
   list-style: none;
   display: inline-block;
-  padding-right:7px;
+  padding-right:.4375rem;
 }
 
 @media(min-width:800px) {
 
-  .primary-nav li {
-    padding-right: 20px;
-    float: left;
-    display: block;
+  .primary-nav ul li {
+    padding-right: 1.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+
+  .primary-nav ul li a {
+    cursor: pointer;
+    padding: 1.5625rem .625rem;
+    font-weight: bold;
+    font-size: .875rem;
+  }
+
+  .primary-nav ul li ul {
+    display: none;
+    background-color: #FFF;
   }
 }
 
-.primary-nav li:last-child{
+.primary-nav ul li:hover ul {
+  display: block;
+  width: 10.3125rem;
+  text-align: left;
+  padding: .625rem;
+  position: absolute;
+  z-index: 9;
+  left:0;
+  top:1.875rem;
+  background-color: #FFF;
+}
+
+.primary-nav ul li:hover ul li {
+  color:#555;
+  padding:.625rem;
+  cursor: pointer;
+}
+
+.primary-nav ul li:hover ul li a {
+  cursor: pointer;
+}
+
+.primary-nav ul li:hover ul li:hover {
+  color:#123241;
+}
+
+.primary-nav ul li:last-child {
   padding-right:0;
 }
 
 @media(min-width:800px) {
 
-  .primary-nav li:last-child {
-    padding-right: 20px;
+  .primary-nav ul li:last-child {
+    padding-right: 1.25rem;
   }
 }
 
@@ -1404,26 +1451,28 @@ p{
   color:#FFF;
   text-decoration: none;
   font-weight: 300;
-  padding:5px 8px;
   font-size:1.8rem;
   background-color: rgba(18,50,65,.5);
   display: block;
+  cursor: pointer;
 }
 
 .primary-nav a:hover{
-  color:#d59541;
+  background-color:#00d089;
+  color:#FFF;
 }
 
 @media(min-width:800px) {
 
   .primary-nav a {
     font-size: 1rem;
-    padding: 12px 0;
+    padding: .75rem 0;
     background-color: transparent;
   }
 
   .primary-nav a.is-current-link {
-    color: #fabb69;
+    background-color: #00d089;
+    color: #FFF;
   }
 }
 
@@ -1636,4 +1685,43 @@ ul.social-icons li:last-child{
 ul.social-icons li:hover{
   border:1px solid #d59541;
   color:#d59541;
+}
+
+.how-you-can-help__nav-tabs {
+  list-style: none;
+  width:670px;
+  margin:0 auto 3rem auto;
+}
+
+.how-you-can-help__nav-tabs::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.how-you-can-help__nav-tabs li {
+  float:left;
+  font-family: 'Oswald', sans-serif;
+  border-right:.3rem #00d089;
+}
+
+.how-you-can-help__nav-tabs li a {
+  padding:1.25rem 1rem;
+  background-color:#FFF;
+  color:#123241;
+  text-decoration: none;
+  font-size:1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-right:2px solid #00d089;
+}
+
+.how-you-can-help__nav-tabs li a:hover {
+  background-color: #123241;
+  color:#FFF;
+}
+
+li.how-you-can-help__nav-tabs__is-visible a {
+  background-color: #123241;
+  color:#FFF;
 }
