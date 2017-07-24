@@ -3,7 +3,7 @@ import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
 import Modal from './modules/Modal';
-//import TabContent from './modules/TabContent';
+import TabContent from './modules/TabContent';
 
 var mobileMenu = new MobileMenu();
 

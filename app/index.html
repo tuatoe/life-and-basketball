@@ -169,22 +169,22 @@
         <div class="wrapper">
             <h2 class="page-section__title">HOW CAN YOU <span class="page-section__title--white-text">HELP?</span></h2>
             <ul class="how-you-can-help__nav-tabs">
-              <li class="how-you-can-help__nav-tabs__link how-you-can-help__nav-tabs__link--current" data=tab="1"><a href="">Recruitment</a></li>
-              <li class="how-you-can-help__nav-tabs__link" data=tab="2"><a href="#">Donate</a></li>
-              <li class="how-you-can-help__nav-tabs__link" data=tab="3"><a href="#">Take responsibility of one student</a></li>
+              <li class="how-you-can-help__nav-tabs__link how-you-can-help__nav-tabs__link--current" data-tab="recruitment-tab-content">Recruitment</li>
+              <li class="how-you-can-help__nav-tabs__link" data-tab="donate-tab-content">Donate</li>
+              <li class="how-you-can-help__nav-tabs__link" data-tab="sponsor-tab-content">Take responsibility of one Student</li>
             </ul>
             
-            <div id="1" class="how-you-can-help__tab-content how-you-can-help__nav-tabs--current-tab">
-                <div class="how-you-can-help__tab-content--tab-pane">
+            <div id="recruitment-tab-content" class="how-you-can-help__tab-content how-you-can-help__nav-tabs--current-tab">
+                <div class="how-you-can-help__tab-content__recruitment">
                     <div class="row row--gutters-small">
                         <div class="row__medium-6">
-                            <h3 class="how-you-can-help__nav-tabs--section-title"><span class="fa fa-quesiton"></span>Lorem Ipsum has been the industry's standard?</h3>
+                            <h3 class="how-you-can-help__tab-content__recruitment__title"><span class="fa fa-question"></span>Lorem Ipsum has been the industry's standard?</h3>
                             <div class="generic-content-container generic-content-container--white generic-content-container--text-align-left">
                             <p>We will do all we can in our power to get to where you need to be, tell us your story and leave us a link to your footages. If you haven't already done so, upload a video on to our website for review.</p>
                             </div>
                         </div>
                         <div class="row__medium-6">
-                            <h3 class="how-you-can-help__nav-tabs--section-title"><span class="fa fa-quesiton"></span>Lorem Ipsum has been the industry's standard?</h3>
+                            <h3 class="how-you-can-help__tab-content__recruitment__title"><span class="fa fa-question"></span></span>Lorem Ipsum has been the industry's standard?</h3>
                             <div class="generic-content-container generic-content-container--white generic-content-container--text-align-left">
                             <p>If you are Division I or professional league ready, we will do all we can in our power to get you to where you need to be.</p>
                             </div>
@@ -193,13 +193,13 @@
             
                     <div class="row row--gutters-small">
                         <div class="row__medium-6">
-                            <h3 class="how-you-can-help__nav-tabs--section-title"><span class="fa fa-quesiton"></span>Team Life</h3>
+                            <h3 class="how-you-can-help__tab-content__recruitment__title"><span class="fa fa-question"></span>Team Life</h3>
                             <div class="generic-content-container generic-content-container--white generic-content-container--text-align-left">
                             <p>We will do all we can in our power to get to where you need to be, tell us your story and leave us a link to your footages. If you haven't already done so, upload a video on to our website for review.</p>
                             </div>
                         </div>
                         <div class="row__medium-6">
-                            <h3 class="how-you-can-help__nav-tabs--section-title"><span class="fa fa-quesiton"></span>Team Life Finalist</h3>
+                            <h3 class="how-you-can-help__tab-content__recruitment__title"><span class="fa fa-question"></span>Team Life Finalist</h3>
                             <div class="generic-content-container generic-content-container--white generic-content-container--text-align-left">
                             <p>If you are Division I or professional league ready, we will do all we can in our power to get you to where you need to be.</p>
                             </div>
@@ -210,8 +210,8 @@
                 
             </div>
             
-            <div id="2" class="how-you-can-help__tab-content">
-                <div class="row row--gutters-small">
+            <div id="donate-tab-content" class="how-you-can-help__tab-content">
+                <div class="row row--gutters-small how-you-can-help__tab-content__donate">
                     <div class="row__medium-6">
                         <img src="assets/images/donate.jpg">
                     </div>
@@ -219,58 +219,66 @@
                      <div class="row__medium-6">
                         <h3>Lorem ipsum dolor sit amet</h3>
                          <p>Donate to help Life n Basketball participants further their Education and hoop dreams. Donation in any amount can help sponsor a participant an American high school or University.</p>
-                         <button class="btn btn--blue">Donate Now</button>
+                         <button class="btn btn--large btn--blue">Donate Now</button>
                     </div>
                 </div>
             </div>
             
-            <div id="3" class="how-you-can-help__tab-content">
+            <div id="sponsor-tab-content" class="how-you-can-help__tab-content">
                 <p>
                     In regards to our students athletes abroad, Life n Basketball will will ensure that at least one student gets the opportunity to further his or her education and hoop dreams at an American high school or university. However, with your generosity, we can increase the number of students. Become a sponsor today. Sponsor a participant and make the dream of using basketball as a vehicle to acquire an education at an American high school or University a reality. Sponsoring a participant is easy, you can find names of all participants who are ready to be sponsored under the "Team Life" tab. View each participant's profile and contact us with name or names of participants you would like to sponsor.
                 </p>
                 <div class="row row--gutters-small">
-                    <div class="row__medium-3">
+                    <div class="row__medium-4">
                         <span class="how-you-can-help__tab-content__sponsor-grid">
-                              <h5>Well wisher <br />-One student for 1 year-</h5>
+                              <h3 class="how-you-can-help__tab-content__sponsor-grid__title-one">Well wisher <br />-One student for 1 year-</h3>
                         <h6>$10 / month</h6>
                             <ul>
                                 <li><p>Personal use</p></li>
                                 <li><p>Unlimited projects</p></li>
                                 <li><p>27/7 support</p></li>
                             </ul>
-                            <button class="btn btn-green">
+                            <div class="how-you-can-help__tab-content__sponsor-grid__footer">
+                            <button class="btn btn--green">
                             Become a well wisher
                             </button>
+                            </div>
+                           
                         </span>
                     </div>
                     
-                    <div class="row__medium-3">
+                    <div class="row__medium-4">
                         <span class="how-you-can-help__tab-content__sponsor-grid">
-                              <h5>Well wisher <br />-One student for 2 year-</h5>
+                              <h3 class="how-you-can-help__tab-content__sponsor-grid__title-two">Well wisher <br />-One student for 2 year-</h3>
                         <h6>$10 / month</h6>
                             <ul>
                                 <li><p>Personal use</p></li>
                                 <li><p>Unlimited projects</p></li>
                                 <li><p>27/7 support</p></li>
                             </ul>
-                            <button class="btn btn-green">
-                            Become a guardian
-                            </button>
+                            <div class="how-you-can-help__tab-content__sponsor-grid__footer">
+                                 <button class="btn btn--green">
+                                    Become a guardian
+                                </button>
+                            </div>
                         </span>
                     </div>
                     
-                    <div class="row__medium-3">
+                    <div class="row__medium-4">
                         <span class="how-you-can-help__tab-content__sponsor-grid">
-                              <h5>Angel <br />-One student for 3 year-</h5>
+                              <h3 class="how-you-can-help__tab-content__sponsor-grid__title-three">Angel <br />-One student for 3 year-</h3>
                         <h6>$10 / month</h6>
                             <ul>
                                 <li><p>Personal use</p></li>
                                 <li><p>Unlimited projects</p></li>
                                 <li><p>27/7 support</p></li>
                             </ul>
-                            <button class="btn btn-green">
+                             <div class="how-you-can-help__tab-content__sponsor-grid__footer">
+                                  <button class="btn btn--green">
                             Become an angel
                             </button>
+                            </div>
+                           
                         </span>
                     </div>
                 </div>

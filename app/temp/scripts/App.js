@@ -66,9 +66,11 @@
 
 	var _Modal2 = _interopRequireDefault(_Modal);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	var _TabContent = __webpack_require__(8);
 
-	//import TabContent from './modules/TabContent';
+	var _TabContent2 = _interopRequireDefault(_TabContent);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var mobileMenu = new _MobileMenu2.default();
 
@@ -78,7 +80,7 @@
 	var stickyHeader = new _StickyHeader2.default();
 	var modal = new _Modal2.default();
 
-	var tabContent = new TabContent();
+	var tabContent = new _TabContent2.default();
 
 /***/ },
 /* 1 */
@@ -11305,6 +11307,58 @@
 	}();
 
 	exports.default = Modal;
+
+/***/ },
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _jquery = __webpack_require__(1);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var TabContent = function () {
+	    function TabContent() {
+	        _classCallCheck(this, TabContent);
+
+	        this.events();
+	    }
+
+	    _createClass(TabContent, [{
+	        key: 'events',
+	        value: function events() {
+
+	            (0, _jquery2.default)('ul.how-you-can-help__nav-tabs li').on('click', this.showActiveTab);
+	        }
+	    }, {
+	        key: 'showActiveTab',
+	        value: function showActiveTab() {
+	            var $that = (0, _jquery2.default)(this);
+	            var tab_id = $that.attr('data-tab');
+
+	            (0, _jquery2.default)('ul.how-you-can-help__nav-tabs li').removeClass('how-you-can-help__nav-tabs__link--current');
+	            (0, _jquery2.default)('.how-you-can-help__tab-content').removeClass('how-you-can-help__nav-tabs--current-tab');
+
+	            $that.addClass('how-you-can-help__nav-tabs__link--current');
+	            (0, _jquery2.default)('#' + tab_id).addClass('how-you-can-help__nav-tabs--current-tab');
+	        }
+	    }]);
+
+	    return TabContent;
+	}();
+
+	exports.default = TabContent;
 
 /***/ }
 /******/ ]);

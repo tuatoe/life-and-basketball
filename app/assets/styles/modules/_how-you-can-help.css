@@ -1,9 +1,107 @@
 .how-you-can-help {
     &__tab-content{
         display: none;
+        animation: fadeEffect 2s;
+        
         
         &.how-you-can-help__nav-tabs--current-tab{
+            animation: fadeEffect 2s;
             display: block;
+        }
+        p{
+            color:#FFF;
+            line-height: 1.625;
+            font-weight: normal;
+            font-size:.875rem;
+            letter-spacing:  0.05em;
+            margin: 0 0 1.25em;
+            text-align: center;
+        }
+        
+       
+        
+        &__recruitment{
+            color:#FFF;
+            text-align: left;
+            p{
+                text-align: left;
+            }
+             
+        }
+        
+        &__donate{
+            color:#FFF;
+            text-align: left;
+            p{
+                text-align: left;
+            }
+        }
+        
+        &__sponsor-grid{
+            p{
+                text-align: center;
+            }
+            h3{
+                color:#FFF;
+                padding:1rem 1.5rem;
+                font-size:1.5rem;
+                text-align: center;
+                margin:0;
+                padding:1.5rem 0;
+            }
+            h6{
+                color:#FFF;
+                font-size:2.25rem;
+                border:1px solid #DDD;
+                text-align: center;
+                margin:0;
+                padding:1rem 0;
+                
+            }
+            
+            &__title-one{
+               
+                background-color: #f2dede;
+            }
+            
+            &__title-two{
+                 background-color: #d9edf7;
+            }
+            
+            &__title-three{
+                 background-color: #dff0d8;
+            }
+            
+            ul{
+                padding:0;
+                margin:0;
+                list-style: none;
+               
+                li{
+                    border:1px solid #DDD; 
+                    margin:0;
+                    padding:0;
+                    background-color: #FFF;
+                    p{
+                         color:#999;
+                        text-align: center;
+                        padding-top:1rem;
+                    }
+                }
+            }
+            
+            &__footer{
+                border:1px solid #DDD;
+                text-align: center;
+                background-color:#EEE;
+                padding:1rem 0;
+                
+                button{
+                    border-radius: 0;
+                    width:90%;
+                }
+            }
+           
         }
     }
     
@@ -24,34 +122,26 @@
             background-color:#FFF;
             padding:1.5rem;
 
-            a {
-                
-                color:$mainBlue;
-                text-decoration: none;
-                text-align: center;
-            }
            
-            
-            
             &--current {
                 background-color:$mainBlue;
-
-                a {
-                    color:#FFF;
-                }
+                color:#FFF;
             }
             
             &:hover{
                
-                     background-color: $mainBlue;
-                a {
-                    color:#FFF;
-                }
+                background-color: $mainBlue;
+                color:#FFF;
               
             }
            
         }
         
     }
+
 }
 
+ @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
