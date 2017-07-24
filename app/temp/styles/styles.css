@@ -1855,6 +1855,7 @@ ul.social-icons li:hover{
 @media(min-width:530px) {
 
   .how-you-can-help__nav-tabs__link {
+    margin-bottom: 2rem;
     font-size: 1.4rem;
     float: left;
   }
