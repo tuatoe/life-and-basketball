@@ -703,6 +703,14 @@ p{
  cursor: pointer;
 }
 
+.btn--blue{
+  background-color:#123241;
+}
+
+.btn--blue:hover{
+  background-color:#d59541;
+}
+
 .btn--orange{
   background:#d59541;
 }

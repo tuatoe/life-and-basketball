@@ -5,6 +5,13 @@
   padding: .75rem 1.2rem ;
   display: inline-block;
  cursor: pointer;
+
+    &--blue{
+        background-color:$mainBlue;
+      &:hover{
+          background-color:$mainOrange;
+      }
+    }    
   &--orange{
     background:$mainOrange;
        &:hover{
