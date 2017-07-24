@@ -110,18 +110,38 @@
     &__nav-tabs {
         @mixin clearfix;
         list-style: none;
-        width:725px;
-        margin:0 auto 3rem auto;
+        width:100%;
+        margin:0;
+        padding:0;
         
+        @mixin atSmall{
+              width:500px;
+                margin:0 auto;
+        }
+        
+        @mixin atMedium{
+             width:630px;
+        }
         &__link{
-            float:left;
+            display: block;
+            margin-bottom:.5rem;
             font-family: 'Oswald', sans-serif;
             border-right:2px solid $mainGreen;
             cursor: pointer;
-            font-size:1.5rem;
+            font-size:1.4rem;
             background-color:#FFF;
-            padding:1.5rem;
-
+            padding:1rem .6rem;
+            text-align: center;
+            
+            @mixin atSmall{
+                 font-size:1.4rem;
+                float: left;
+            }
+            
+            @mixin atMedium{
+                 font-size:1.5rem;
+                 padding:1.5rem;
+            }
            
             &--current {
                 background-color:$mainBlue;
