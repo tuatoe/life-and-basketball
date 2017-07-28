@@ -1094,6 +1094,13 @@ p{
   font-weight:700;
 }
 
+.generic-content-container img{
+  padding:0 0.625rem 0.625rem 0.625rem;
+  border-radius: 1.5rem;
+  max-width: 100%;
+  height:auto;
+}
+
 .section-title{
   font-size:2.55rem;
   font-weight: 300;
@@ -1169,7 +1176,7 @@ p{
 
 }
 
-@media(min-width:800px) {
+@media(min-width:1010px) {
 
   .site-header {
     border-bottom: .3125rem solid #00d089;
@@ -1180,7 +1187,7 @@ p{
   background-color: rgba(18,50,65, .55);
 }
 
-@media(min-width:800px) {
+@media(min-width:1010px) {
 
   .site-header {
     position: fixed;
@@ -1196,7 +1203,7 @@ p{
   margin-top:.8rem;
 }
 
-@media(min-width:800px) {
+@media(min-width:1010px) {
 
   .site-header__btn-container {
     float: right;
@@ -1219,7 +1226,7 @@ p{
   display: block;
 }
 
-@media(min-width:800px) {
+@media(min-width:1010px) {
 
   .site-header__logo {
     left: auto;
@@ -1309,7 +1316,7 @@ p{
   transition: transform .3s ease-out, -webkit-transform .3s ease-out;
 }
 
-@media(min-width:800px) {
+@media(min-width:1010px) {
 
   .site-header__menu-icon {
     display: none;
@@ -1343,7 +1350,7 @@ p{
   text-align: center;
 }
 
-@media(min-width:800px) {
+@media(min-width:1010px) {
 
   .site-header__menu-content {
     opacity: 1;
@@ -1368,14 +1375,14 @@ p{
 
 }
 
-@media(min-width:800px) {
+@media(min-width:1010px) {
 
   .primary-nav {
     padding-top: 0;
   }
 }
 
-@media(min-width:800px) {
+@media(min-width:1010px) {
 
   .primary-nav--pull-right {
     float: right;
@@ -1400,28 +1407,28 @@ p{
   list-style: none;
   display: inline-block;
   padding-right:.4375rem;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }
 
-@media(min-width:800px) {
+.primary-nav ul li a {
+  cursor: pointer;
+  padding:.6rem .625rem;
+  font-weight: bold;
+  font-size: .875rem;
+}
 
-  .primary-nav ul li {
-    padding-right: 1.25rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-  }
+@media(min-width:1010px) {
 
   .primary-nav ul li a {
-    cursor: pointer;
     padding: 1.2rem .625rem;
-    font-weight: bold;
-    font-size: .875rem;
   }
+}
 
-  .primary-nav ul li ul {
-    display: none;
-    background-color: #FFF;
-  }
+.primary-nav ul li ul {
+  display: none;
+  background-color:#FFF;
 }
 
 .primary-nav ul li:hover ul {
@@ -1454,7 +1461,7 @@ p{
   padding-right:0;
 }
 
-@media(min-width:800px) {
+@media(min-width:1010px) {
 
   .primary-nav ul li:last-child {
     padding-right: 1.25rem;
@@ -1465,10 +1472,19 @@ p{
   color:#FFF;
   text-decoration: none;
   font-weight: 300;
-  font-size:1.8rem;
-  background-color: rgba(18,50,65,.5);
+  font-size:1.2rem;
+  background-color: rgba(18,50,65,1);
   display: block;
   cursor: pointer;
+  padding:.5rem;
+  margin-bottom:1rem;
+}
+
+@media(min-width:1010px) {
+
+  .primary-nav a {
+    margin-bottom: 0;
+  }
 }
 
 .primary-nav a:hover{
@@ -1476,7 +1492,7 @@ p{
   color:#FFF;
 }
 
-@media(min-width:800px) {
+@media(min-width:1010px) {
 
   .primary-nav a {
     font-size: 1rem;
@@ -1595,6 +1611,31 @@ p{
   text-align: center;
 }
 
+.what-we-do ul{
+  font-size:1rem;
+  color:#999;
+  font-weight: 300;
+  margin-top:0;
+  padding-top:0;
+}
+
+.what-we-do ul li{
+  margin-bottom:.5rem;
+}
+
+.what-we-do ul ul{
+  font-size:1rem;
+  color:#999;
+}
+
+.what-we-do ul ul li{
+  margin-bottom:.4rem;
+}
+
+.what-we-do ul ul li:first-child{
+  margin-top:.4rem;
+}
+
 .what-we-do__content p {
   padding:5px 25px;
 }
@@ -1612,6 +1653,14 @@ p{
 
 .what-we-do__content__title-white{
   color:#FFF;
+}
+
+.what-we-do__content__sub-title{
+  font-size:1.1rem;
+  text-align: center;
+  color:#999;
+  margin-top:0;
+  padding-top:0;
 }
 
 .what-we-do__green-bg {

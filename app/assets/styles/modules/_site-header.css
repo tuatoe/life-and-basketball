@@ -5,7 +5,7 @@
   transition: background-color .3s ease-out;
 
 
-    @mixin atMedium{
+    @mixin atLarge{
          border-bottom:.3125rem solid $mainGreen;
     }
 
@@ -13,7 +13,7 @@
     background-color:rgba($mainBlue, .55);
   }
 
-  @mixin atMedium{
+  @mixin atLarge{
       position: fixed;
       background-color:rgba($mainBlue,.85);
 
@@ -24,7 +24,7 @@
 
   &__btn-container{
       margin-top:.8rem;
-    @mixin atMedium{
+    @mixin atLarge{
         float:right;
     }
 
@@ -43,7 +43,7 @@
       border-radius: 0 0 .3125rem .3125rem;
       display: block;
       
-    @mixin atMedium{
+    @mixin atLarge{
         left:auto;
         transform: translateX(0);
         .site-header--dark & {
@@ -67,7 +67,8 @@
   &__logo__graphic{
     text-indent: -9999px;
   }
-    /*mobile menu*/
+
+ /*mobile menu*/
   &__menu-icon{
     width:20px;
     height:19px;
@@ -111,7 +112,7 @@
       transition: transform .3s ease-out;
     }
 
-    @mixin atMedium{
+    @mixin atLarge{
       display: none;
     }
 
@@ -141,7 +142,7 @@
     padding-top:5.625rem;
     text-align: center;
 
-    @mixin atMedium{
+    @mixin atLarge{
       opacity: 1;
       z-index: 1;
       padding-top:0;

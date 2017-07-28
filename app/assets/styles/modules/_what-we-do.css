@@ -5,6 +5,29 @@
         text-align: center;
     }
     
+    ul{
+        font-size:1rem;
+        color:#999;
+        font-weight: 300;
+        margin-top:0;
+        padding-top:0;
+        li{
+            margin-bottom:.5rem;
+        }
+        
+        ul{
+             font-size:1rem;
+             color:#999;
+            li{
+                margin-bottom:.4rem;
+                &:first-child{
+                    margin-top:.4rem;
+                }
+            }
+            
+        }
+    }
+    
     
      &__content {
         p {
@@ -27,6 +50,13 @@
              &-white{
                  color:#FFF;
              }
+         }
+         &__sub-title{
+             font-size:1.1rem;
+             text-align: center;
+             color:#999;
+             margin-top:0;
+             padding-top:0;
          }
     }
     

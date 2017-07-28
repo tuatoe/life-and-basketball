@@ -2,12 +2,13 @@
 
   padding-top:1.25rem;
   position: relative;
-  @mixin atMedium{
+  
+  @mixin atLarge{
     padding-top:0;
   }
 
   &--pull-right{
-    @mixin atMedium{
+    @mixin atLarge{
       float:right;
     }
   }
@@ -23,17 +24,17 @@
         list-style: none;
         display: inline-block;
         padding-right:.4375rem;
-
-        @mixin atMedium {
-        padding-right:1.25rem;
         display: inline-block;
         position: relative;
             z-index: 1;
             a {
                 cursor: pointer;
-                padding:1.2rem .625rem;
+                padding:.6rem .625rem;
                 font-weight: bold;
                 font-size: .875rem;
+                @mixin atLarge{
+                    padding:1.2rem .625rem;
+                }
                 
             }
             
@@ -42,7 +43,7 @@
                 background-color:#FFF; 
 
             }
-        }
+        
         
         &:hover ul {
                 display: block;
@@ -73,7 +74,7 @@
 
     li:last-child {
         padding-right:0;
-        @mixin atMedium {
+        @mixin atLarge {
         padding-right: 1.25rem;
             
         }
@@ -85,18 +86,22 @@ a {
     color:#FFF;
     text-decoration: none;
     font-weight: 300;
-    font-size:1.8rem;
-    background-color: rgba($mainBlue,.5);
+    font-size:1.2rem;
+    background-color: rgba($mainBlue,1);
     display: block;
     cursor: pointer;
-    
+    padding:.5rem;
+    margin-bottom:1rem;
+    @mixin atLarge{
+        margin-bottom:0;
+    }
     
     &:hover{
         background-color:$mainGreen;
         color:#FFF;
     }
 
-    @mixin atMedium {
+    @mixin atLarge {
         font-size:1rem;
         padding:.75rem 0;
         background-color: transparent;

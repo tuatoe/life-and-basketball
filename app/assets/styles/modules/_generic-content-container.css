@@ -24,5 +24,12 @@
   p a{
     font-weight:700;
   }
+    
+    img{
+        padding:0 0.625rem 0.625rem 0.625rem;
+        border-radius: 1.5rem;
+        max-width: 100%;
+        height:auto;
+    }
 
 }
