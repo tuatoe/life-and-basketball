@@ -3,10 +3,15 @@
   z-index: 2;
   width:100%;
   transition: background-color .3s ease-out;
+    
+  height: 3rem;
+  padding: .5rem;
+ 
 
 
-    @mixin atLarge{
+  @mixin atLarge{
          border-bottom:.3125rem solid $mainGreen;
+        
     }
 
   &--is-expanded{
@@ -29,6 +34,35 @@
     }
 
   }
+    
+&__title{
+    display: none;
+         h1{
+        text-indent: -9999px;
+    }
+    float: left;
+    font-size: .75rem;
+    color:#FFF;
+    margin:.3rem;
+    padding:0;
+    @mixin atMedium{
+        display: none;
+        h1{
+        text-indent: -9999px;
+    }
+    float: left;
+    font-size: .75rem;
+    color:#FFF;
+    margin:.3rem;
+    padding:0;
+    
+    }
+    
+     @mixin atLarge{
+        display: block;
+    
+    }
+}    
 
   &__logo{
     position: absolute;
@@ -48,6 +82,7 @@
         transform: translateX(0);
         .site-header--dark & {
         transform: scale(.56);
+            display: none;
       }
         
     }
@@ -67,7 +102,6 @@
   &__logo__graphic{
     text-indent: -9999px;
   }
-
  /*mobile menu*/
   &__menu-icon{
     width:20px;
