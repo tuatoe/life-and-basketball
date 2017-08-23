@@ -28,6 +28,10 @@
         }
     }
     
+    &.athlete-reg{
+        text-align: center;
+    }
+    
     
      &__content {
         p {
