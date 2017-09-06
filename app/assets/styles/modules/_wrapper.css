@@ -45,4 +45,8 @@
           margin-bottom:3.85rem;
       }
   }
+    
+    &--overflow-visible{
+        overflow: visible;
+    }
 }

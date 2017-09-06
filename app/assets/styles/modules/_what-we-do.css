@@ -34,6 +34,7 @@
     
     
      &__content {
+        padding-bottom:1rem;
         p {
          padding:5px 25px;
         }
@@ -58,9 +59,30 @@
          &__sub-title{
              font-size:1.1rem;
              text-align: center;
+             overflow: hidden;
              color:#999;
              margin-top:0;
              padding-top:0;
+         }
+         
+         & .more-content-trigger{
+             text-align: center;
+             span{
+                    background-color:$mainBlue;
+                    padding:10px 12px;
+                    border-radius: .3rem;
+                    color:#FFF;
+                    cursor: pointer;
+                    font-size: .95rem;
+
+                 &:hover{
+                     background-color:$mainOrange;
+                 }
+             }
+         }
+         
+         & .more-content{
+             display: none;
          }
     }
     
