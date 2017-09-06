@@ -1728,7 +1728,7 @@ p{
 
 .our-success{
   background-color: rgba(0,208,137,.77);
-  background-image:url('../../assets/images/texture-bg.png');
+  /*background-image:url('../../assets/images/texture-bg.png');*/
 
   margin-bottom:98px;
 }
