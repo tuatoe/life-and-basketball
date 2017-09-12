@@ -465,8 +465,7 @@ body{
   color:#333;
 }
 
-img
-{
+img {
   max-width:100%;
   width:auto;
 }
@@ -938,6 +937,10 @@ p{
 
 .row--t-padding{
   padding-top:80px;
+}
+
+.row--b-padding{
+  padding-bottom:80px;
 }
 
 .row--gutters{
@@ -2137,4 +2140,43 @@ ul.social-icons li:hover{
   .camp-reg-form .generic-content-container p {
     text-align: left;
   }
+}
+
+.events__content {
+  position: relative;
+  border:1px solid #ddd;
+}
+
+.events__content p {
+  text-align: left;
+  padding-top:2em;
+  color:#999;
+}
+
+.events__content img {
+  border-radius: 0;
+  width:100%;
+}
+
+.events__content__inner-content {
+  padding:10px;
+}
+
+.events__content__inner-content__title {
+  color:#00d089;
+  margin:.6em 0 .2em 0;
+  padding:0;
+}
+
+.events__content__inner-content__date {
+  color:#999;
+  font-size:.85rem;
+}
+
+.events__content__inner-content__read-more {
+  color:#00d089;
+  float:right;
+  font-weight: 300;
+  font-size:.85rem;
+  padding-bottom:1.2em;
 }

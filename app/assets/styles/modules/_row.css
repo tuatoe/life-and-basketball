@@ -6,6 +6,10 @@
   padding-top:80px;
 }
 
+&--b-padding{
+   padding-bottom:80px;
+}
+    
 &--gutters{
   margin-right:-65px;
 }
@@ -38,9 +42,11 @@
     margin-bottom:2rem;
  } 
 
+  
   @mixin atMedium {
       
- &--bottom-margin{
+      
+ &--bottom-margin {
     margin-bottom:4rem;
  } 
 
