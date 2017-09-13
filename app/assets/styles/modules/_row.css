@@ -42,33 +42,64 @@
     &__b-margin-until-medium {
         margin-bottom:0;
     }
-      
-      &__medium-3{
-          float:left;
-          width:25%;
-      }      
+    
     &__medium-4 {
-      float:left;
-      width:33.33%;
+        width:08.33%;
+        float:left;
+    }
+      
+    &__medium-2 {
+        width:16.66%;
+        float:left;
     }
 
-    &__medium-4--larger {
-      width:37%;
+    &__medium-3 {
+        width:25%;
+        float:left;
+
     }
 
-    &__medium-6{
-      float:left;
-      width:50%;
+    &__medium-4 {
+        width:33.33%;
+        float:left;
     }
 
-    &__medium-8{
-      float:left;
-      width:66.66%;
+    &__medium-6 {
+        width:50%;
+        float:left;
     }
 
-    &__medium-8--smaller{
-      width:63%;
+    &__medium-7 {
+        width:58.33%;
+        float:left;
     }
+
+    &__medium-8 {
+        width:66.66%;
+        float:left;
+    }
+
+    &__medium-9 {
+        width:75%;
+        float:left;
+    }
+
+
+    &__medium-10 {
+        width:83.33%;
+        float:left;
+    } 
+
+    &__medium-11 {
+        width:91.66%;
+        float:left;
+    } 
+
+    &__medium-12 {
+        width:100%;
+        float:left;
+    } 
+   
 
   }
 
@@ -79,27 +110,60 @@
     }
       
     &__large-4 {
-      float:left;
-      width:33.33%;
+        width:08.33%;
+        float:left;
+    }
+    &__large-2 {
+        width:16.66%;
+        float:left;
     }
 
-    &__large-4--larger {
-      width:37%;
+    &__large-3 {
+        width:25%;
+        float:left;
+
     }
 
-    &__large-6{
-      float:left;
-      width:50%;
+    &__large-4 {
+        width:33.33%;
+        float:left;
     }
 
-    &__large-8{
-      float:left;
-      width:66.66%;
+    &__large-6 {
+        width:50%;
+        float:left;
     }
 
-    &__large-8--smaller{
-      width:63%;
+    &__large-7 {
+        width:58.33%;
+        float:left;
     }
+
+    &__large-8 {
+        width:66.66%;
+        float:left;
+    }
+
+    &__large-9 {
+        width:75%;
+        float:left;
+    }
+
+
+    &__large-10 {
+        width:83.33%;
+        float:left;
+    } 
+
+    &__large-11 {
+        width:91.66%;
+        float:left;
+    } 
+
+    &__large-12 {
+        width:100%;
+        float:left;
+    } 
 
   }
 

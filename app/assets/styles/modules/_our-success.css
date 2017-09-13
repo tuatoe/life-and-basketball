@@ -1,46 +1,37 @@
-.our-success{
-  background-color:rgba($mainGreen,.77);
-  /*background-image:url('../../assets/images/texture-bg.png');*/
+.our-success {
+    color:#999;
+    
+    & P { text-align: left; padding-right:15px;}
+   
+    &__content-block {
+        
+        border:1px solid #ddd;
+        padding:0;
+        margin-bottom:45px;
+        
+        @mixin atLarge{
+           margin-bottom:30px;
+        }
+        
+        & img{
+           display: block;
+            width:100%;
+        }
+        &__text-block{
+            padding-left:35px;
+        }
+        &__title {
+            font-weight: 200;
+            margin:0;
+            padding:1.5em 0 .55em 0;
+            font-size: 1.5rem;
 
-  margin-bottom:98px;
-
-  @mixin atLarge{
-      margin-bottom:0;
-    padding:0 1.8125rem 1px 1.8125rem;
-  }
-
-
-  &--last{
-    margin-bottom: 0;
-  }
-
-  &__photo{
-    border-radius:80px;
-    overflow: hidden;
-    width:160px;
-    height:160px;
-    margin:0 auto -80px auto;
-    border:6px solid rgba(255,255,255,.8);
-    position: relative;
-    top:-80px;
-  }
-
-  &__title{
-    color:$mainBlue;
-    text-align: center;
-    font-weight: 500;
-    margin:1rem 0 0 0;
-  }
-  &__subtitle{
-    color:#FFF;
-    text-align: center;
-    font-weight: 400;
-    margin:.25rem 0 1rem 0;
-    text-align: center;
-    font-size:1.1rem;
-  }
-    &__content{
-        color:#FFF;
-        text-align: center;
+        }
+        
+        &__sub-title {
+            font-weight: 200;
+            margin:0;
+            padding:0 0 .55em 0;
+        }
     }
 }
