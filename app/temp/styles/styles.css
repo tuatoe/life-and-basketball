@@ -867,9 +867,7 @@ p{
   color:#FFF;
 }
 
-.page-section--our-success{
-  background-color:#e0e6ef;
-  background:url('../../assets/images/our-success-bg.jpg') top center no-repeat;/*@mixin atLarge{
+.page-section--our-success{/*background-color:#e0e6ef;*//*background:url('../../assets/images/our-success-bg.jpg') top center no-repeat;*//*@mixin atLarge{
       &.lazyloaded{
         background:url('../../assets/images/our-success-bg.jpg') top center no-repeat;
         background-size:cover;
