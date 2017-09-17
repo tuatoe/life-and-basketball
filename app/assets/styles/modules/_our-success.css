@@ -4,9 +4,11 @@
     & P { text-align: left; padding-right:15px;}
    
     &__content-block {
-        
+       
         border:1px solid #ddd;
         padding:0;
+        
+       
         margin-bottom:45px;
         
         @mixin atLarge{
