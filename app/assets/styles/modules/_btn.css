@@ -44,6 +44,24 @@
         text-align: left !important;
     }
     
+    &--read-more{
+        background-color:transparent;
+        color:$mainGreen;
+        
+        &:hover{
+            color:$mainBlue;
+        }
+        
+        &--blue{
+            color:$mainBlue;
+            text-align: center;
+            
+            &:hover{
+                color:#FFF;
+            }
+        }
+    }
+    
 }
 
 
