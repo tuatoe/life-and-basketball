@@ -66,7 +66,11 @@
 
 	var _Modal2 = _interopRequireDefault(_Modal);
 
-	var _TabContent = __webpack_require__(8);
+	var _HarrisModal = __webpack_require__(8);
+
+	var _HarrisModal2 = _interopRequireDefault(_HarrisModal);
+
+	var _TabContent = __webpack_require__(9);
 
 	var _TabContent2 = _interopRequireDefault(_TabContent);
 
@@ -79,7 +83,7 @@
 
 	var stickyHeader = new _StickyHeader2.default();
 	var modal = new _Modal2.default();
-
+	var harrisModal = new _HarrisModal2.default();
 	var tabContent = new _TabContent2.default();
 
 /***/ },
@@ -11310,6 +11314,73 @@
 
 /***/ },
 /* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _jquery = __webpack_require__(1);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var HarrisModal = function () {
+	  function HarrisModal() {
+	    _classCallCheck(this, HarrisModal);
+
+	    this.openModalButton = (0, _jquery2.default)('.open-harris-modal');
+	    this.modal = (0, _jquery2.default)('.harris-modal');
+	    this.closeModalButton = (0, _jquery2.default)('.modal__close');
+	    this.events();
+	  }
+
+	  _createClass(HarrisModal, [{
+	    key: 'events',
+	    value: function events() {
+	      //clicking the open modal button
+	      this.openModalButton.on('click', this.openModal.bind(this));
+
+	      //clicking the x close modal button
+	      this.closeModalButton.on('click', this.closeModal.bind(this));
+
+	      //pushes any key
+	      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+	    }
+	  }, {
+	    key: 'keyPressHandler',
+	    value: function keyPressHandler(e) {
+	      if (e.keyCode == 27) {
+	        this.closeModal();
+	      }
+	    }
+	  }, {
+	    key: 'openModal',
+	    value: function openModal() {
+	      this.modal.addClass('modal--is-visible');
+	      return false;
+	    }
+	  }, {
+	    key: 'closeModal',
+	    value: function closeModal() {
+	      this.modal.removeClass('modal--is-visible');
+	    }
+	  }]);
+
+	  return HarrisModal;
+	}();
+
+	exports.default = HarrisModal;
+
+/***/ },
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

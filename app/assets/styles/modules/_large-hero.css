@@ -117,6 +117,8 @@
                transform: translateX(-50%);
                position: relative;
                padding:.8rem 2.5rem .8rem .8rem !important;
+               border:0;
+               color:#FFF;
                
                @mixin atMedium {
                    margin:2.5rem auto;

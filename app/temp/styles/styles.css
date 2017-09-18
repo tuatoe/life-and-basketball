@@ -490,6 +490,10 @@ h3 {
     font-size:1.5rem;
 }
 
+h4{
+    font-size:1.3rem;
+}
+
 p{
     font-size:.875rem /*16px / 14px = .875rem*/
 }
@@ -649,6 +653,8 @@ p{
           transform: translateX(-50%);
   position: relative;
   padding:.8rem 2.5rem .8rem .8rem !important;
+  border:0;
+  color:#FFF;
 }
 
 @media(min-width:800px) {
@@ -738,6 +744,10 @@ p{
 
 .btn--center{
   text-align: center;
+}
+
+.btn--left{
+  text-align: left !important;
 }
 
 .wrapper{
@@ -1138,6 +1148,11 @@ p{
   text-align: center;
 }
 
+.generic-content-container h4{
+  margin-bottom:.5em;
+  color:#123241;
+}
+
 .generic-content-container--text-align-left p{
   text-align: left;
 }
@@ -1161,6 +1176,23 @@ p{
   border-radius: 1.5rem;
   max-width: 100%;
   height:auto;
+}
+
+.generic-content-container ul{
+  margin:0;
+  padding:0;
+  text-align: left;
+}
+
+.generic-content-container ul li{
+  font-size:.875rem;
+  margin-bottom:.5em;
+}
+
+.generic-content-container__center{
+  width:730px;
+  margin:0 auto;
+  text-align: center;
 }
 
 .section-title{
