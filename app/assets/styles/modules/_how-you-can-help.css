@@ -2,6 +2,11 @@
     &__tab-content{
         display: none;
         animation: fadeEffect 2s;
+        padding-bottom:1.5rem;
+        
+        @mixin atLarge{
+            padding-bottom:0;
+        }
         
         
         &.how-you-can-help__nav-tabs--current-tab{

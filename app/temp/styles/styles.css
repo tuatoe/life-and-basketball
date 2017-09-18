@@ -1983,6 +1983,14 @@ ul.social-icons li:hover{
   display: none;
   -webkit-animation: fadeEffect 2s;
           animation: fadeEffect 2s;
+  padding-bottom:1.5rem;
+}
+
+@media(min-width:1010px) {
+
+  .how-you-can-help__tab-content {
+    padding-bottom: 0;
+  }
 }
 
 .how-you-can-help__tab-content.how-you-can-help__nav-tabs--current-tab{
