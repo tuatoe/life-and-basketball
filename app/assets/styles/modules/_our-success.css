@@ -4,7 +4,7 @@
     & P { text-align: left; padding-right:15px;}
    
     &__content-block {
-       
+        display: flex;
         border:1px solid #ddd;
         padding:0;
         
@@ -15,13 +15,28 @@
            margin-bottom:30px;
         }
         
-        & img{
-           display: block;
+        &__img{
+            display: block;
             width:100%;
+            flex:1;
+            flex-direction: column;
+            @mixin atMedium{
+                order:0;
+                display: flex;
+            }
         }
         &__text-block{
             padding-left:35px;
+            flex: 2;
+            order:2;
+             display: flex;
+            flex-direction: column;
+            @mixin atMedium{
+                order:0;
+                display: flex;
+            }
         }
+        
         &__title {
             font-weight: 200;
             margin:0;
