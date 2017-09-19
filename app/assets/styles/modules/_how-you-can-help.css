@@ -2,8 +2,7 @@
     &__tab-content{
         display: none;
         animation: fadeEffect 2s;
-        padding-bottom:1.5rem;
-        
+        padding:1rem 1.5rem 1.5rem 1.5rem;
         @mixin atLarge{
             padding-bottom:0;
         }
@@ -120,12 +119,12 @@
         padding:0;
         
         @mixin atSmall{
-              width:500px;
-                margin:0 auto;
+              width:430px;
+              margin:0 auto;
         }
         
         @mixin atMedium{
-             width:630px;
+             width:560px;
         }
         &__link{
             display: block;
