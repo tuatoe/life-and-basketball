@@ -12,6 +12,7 @@ img {
 }
 a {
   color:$mainOrange;
+    text-decoration: none;
 }
 
 
@@ -34,4 +35,7 @@ p{
     font-size:.875rem /*16px / 14px = .875rem*/
 }
 
+.center{
+    text-align: center;
+}
 

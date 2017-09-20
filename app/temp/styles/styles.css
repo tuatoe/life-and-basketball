@@ -476,6 +476,7 @@ img {
 
 a {
   color:#d59541;
+    text-decoration: none;
 }
 
 h1,h2,h3,h4 {
@@ -496,6 +497,10 @@ h4{
 
 p{
     font-size:.875rem /*16px / 14px = .875rem*/
+}
+
+.center{
+    text-align: center;
 }
 
 .large-hero{
@@ -1918,6 +1923,8 @@ p{
 
 .our-success {
     color:#999;
+    
+    
 }
 
 .our-success img{
@@ -1933,6 +1940,13 @@ p{
   border:1px solid #ddd;
   padding:0;
   margin-bottom:45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media(min-width:1010px) {
@@ -1944,17 +1958,38 @@ p{
 
 .our-success__content-block__img{
   width:100%;
+  -webkit-box-ordinal-group:2;
+      -ms-flex-order:1;
+          order:1;
 }
 
 .our-success__content-block__text-block{
   padding:15px;
+  -webkit-box-ordinal-group:3;
+      -ms-flex-order:2;
+          order:2;
+}
+
+@media(min-width:1010px) {
+
+  .our-success__content-block__text-block {
+    padding-top: 1.5em;
+  }
 }
 
 .our-success__content-block__title {
   font-weight: 200;
-  margin:0;
-  padding:1.5em 0 .55em 0;
-  font-size: 1.5rem;
+  font-size:2em;
+  margin:0 0 .3em 0;
+}
+
+@media(min-width:800px) {
+
+  .our-success__content-block__title {
+    font-size: 1.5rem;
+    padding: 1.5em 0 .55em 0;
+    margin: 0;
+  }
 }
 
 .our-success__content-block__sub-title {
@@ -1966,22 +2001,18 @@ p{
 @media(min-width:800px) {
 
   .our-success__content-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
   }
 
-  .our-success__content-block__img {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+  .our-success__content-block img {
+    display: block;
   }
+
+  .our-success__content-block__img {}
 
   .our-success__content-block__text-block {
+    padding-top: 0;
     padding-left: 25px;
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
   }
 }
 
@@ -2376,4 +2407,45 @@ ul.social-icons li:hover{
   .gallery a img {
     width: auto;
   }
+}
+
+.accordion-content__accordion{
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion-content__accordion.active .accordion-content__accordion:hover{
+  background-color:#ddd;
+}
+
+.accordion-content__accordion:after{
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion-content__accordion.active:after{
+  content: "\2212";
+}
+
+.accordion-content .active{
+  display: block !important;
+}
+
+.accordion-content__panel{
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }

@@ -9,31 +9,42 @@
     &__content-block {
         border:1px solid #ddd;
         padding:0;
-        
-       
         margin-bottom:45px;
-        
+        display: flex;
+        flex-direction: column;
         @mixin atLarge{
            margin-bottom:30px;
         }
         
         &__img{
             width:100%;
-           
+            order:1;
         }
        
         &__text-block{
             padding:15px;
+            order:2;
+            
+            @mixin atLarge{
+                padding-top:1.5em;
+            }
         }
         
         
         &__title {
             font-weight: 200;
-            margin:0;
-            padding:1.5em 0 .55em 0;
-            font-size: 1.5rem;
-
+            font-size:2em;
+            margin:0 0 .3em 0;
+            
+            @mixin atMedium{
+                font-size: 1.5rem;
+                padding:1.5em 0 .55em 0;
+                margin:0;
+            }
+            
         }
+        
+       
         
         &__sub-title {
             font-weight: 200;
@@ -42,22 +53,25 @@
         }
     }
     
-    @mixin atMedium{
+    @mixin atMedium {
         &__content-block {
-                display: flex;
+             display: inline-block;
+            & img {display: block;}
                
-                &__img {
-                   flex:1;
-                   
                 
-                }
-
+            &__img{
+                
+            }
+            
                 &__text-block {
-                padding-left:25px;
-                  flex:2;
+                    padding-top:0;
+                    padding-left:25px;
+                 
                 }
             }
         
             
         }
+    
+    
 }
