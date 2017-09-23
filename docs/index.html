@@ -9,7 +9,7 @@
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, afforable travel">
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
 
-  <link rel="stylesheet" href="assets/styles/styles-d7a370b2d4.css"/>
+  <link rel="stylesheet" href="assets/styles/styles-8203b24a72.css"/>
     
     <link rel="stylesheet" href="assets/styles/lightbox-f9b66c559d.min.css"/>
     
@@ -451,14 +451,35 @@ As the joke goes, "don't be like the other guy, be like Dan and become a host fa
     </div>
     <!--our success-->
     
+   <style>
+      .jotform .jtForm-all{
+           height:2000px !important;
+       }
+       .subscribe.page-section{
+           padding:0;
+           margin:0;
+       }
+       .subscribe .page-section__title{
+           padding-bottom:0;
+           margin-bottom:0;
+       }
+    </style>
+   
     <!--mailing list-->
-    <div id="mailing-list" class="page-section page-section--blue">
+    <div id="mailing-list" class="page-section page-section--blue subscribe">
         <div class="wrapper wrapper--no-padding-until-large">
-        
+            <h2 class="page-section__title"><span class="page-section__title--white-text">JOIN OUR</span> <span class="page-section__title--green-text">MAILING</span><span class="page-section__title--white-text">LIST</span></h2>
+            <div class="jotform"><script type="text/javascript" src="https://form.jotform.us/jsform/72637939084166"></script></div>
         </div>
     </div>
     <!--end mailing list-->
-    
+    <script type="text/javascript">
+        (function(){
+                        document.getElementsByClassName('jfForm-all').style.height = "200px";
+
+        })
+     
+        </script>
     <!--events-->
     <div id="events" class="page-section page-section--white events" data-matching-link="#event-link">
     <div class="wrapper wrapper-no-padding-until-large">
@@ -687,9 +708,9 @@ This opportunity is for 4th and 5th graders who don't have a school team. Regist
 
 </div>
     <!--harris modal-->
-    <div class="modal harris-modal">
-        <div class="modal__inner">
-        <div class="modal__inner--img">
+    <div class="harris-modal">
+        <div class="harris-modal__inner">
+        <div class="harris-modal__inner--img">
              <img sizes="160px" src="assets/images/harris-moses-160x160.jpg" alt="Harris Moses">
         </div>     
        
@@ -718,13 +739,13 @@ This opportunity is for 4th and 5th graders who don't have a school team. Regist
 
         </div>
 
-        <div class="modal__close">X</div>
+        <div class="harris-modal__close">X</div>
     </div>
     <!--end harris modal-->
     
     <!--life academy modal-->
-    <div class="modal life-academy-modal">
-        <div class="modal__inner">
+    <div class="life-academy-modal">
+        <div class="life-academy-modal__inner">
            
             <img sizes="1920px"  src="assets/images/life-and-basket-ball-1920x260.jpg" alt="Life and Basketball">
                
@@ -732,7 +753,7 @@ This opportunity is for 4th and 5th graders who don't have a school team. Regist
             <h2 class="section-title section-title--blue section-title--less-margin modal__life-academy-title">Life Academy</h2>
 
             <div class="wrapper">
-                <div class="generic-content-container modal__life-academy">
+                <div class="generic-content-container life-academy-modal__life-academy">
                     <p>Founded in 2012 with the hopes of finding purpose in life, the Life &amp; Basketball Academy will be the first elite student-athlete basketball academy in Liberia.</p>
                     <p>The academy will serve both high school boys and girls. Students will have the opportunity to graduate high school, attend college and secure a quality job upon completing our program. Some students may have the opportunity to leverage their athletic talents to secure scholarships at top high schools/colleges in the US and around the world.</p>
 
@@ -754,12 +775,13 @@ This opportunity is for 4th and 5th graders who don't have a school team. Regist
 
             </div>
         </div>
-        <div class="modal__close">X</div>
+        <div class="life-academy-modal__close">X</div>
     </div>
     <!--end life academy modal-->
 
     <script src="assets/scripts/foogaloop2.min.js"></script>
 
   <script src="assets/scripts/App.js"></script>
+     
 </body>
 </html>

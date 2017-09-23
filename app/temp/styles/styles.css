@@ -503,6 +503,10 @@ p{
     text-align: center;
 }
 
+.jfCard-wrapper{
+            height:200px !important;
+        }
+
 .large-hero{
   border-bottom:.125rem solid #00d089;
   position: relative;
@@ -2448,4 +2452,208 @@ ul.social-icons li:hover{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.harris-modal{
+  position: fixed;
+  z-index: 5;
+  background-color: rgba(255,255,255,.94);
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all .3s ease-out;
+ 
+}
+
+.harris-modal--is-visible{
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.harris-modal__inner {
+  position: absolute;
+  top: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0 auto;
+  left: 50%;
+  width:100%;
+  height:100%;
+  overflow-y: auto;
+  padding-bottom:60px;
+}
+
+.harris-modal__inner--img {
+  border-radius: 80px;
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+  border: 6px solid hsla(0,0%,100%,.8);
+}
+
+.harris-modal__inner--img--no-radius{
+  border-radius: 0;
+  width:960px;
+  height:500px;
+}
+
+@media(min-width:800px) {
+
+  .harris-modal__inner {
+    height: 100%;
+    width: 75%;
+    overflow-y: auto;
+  }
+}
+
+@media(min-width:1010px) {
+
+  .harris-modal__inner {
+    width: 70%;
+  }
+}
+
+.harris-modal__description{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+.harris-modal__close{
+  position: absolute;
+  top:15px;
+  right:15px;
+  font-size:2rem;
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  color:#123241;
+}
+
+.harris-modal__close:hover{
+  color:#d59541;
+  cursor: pointer;
+}
+
+.harris-modal__life-academy-title{
+  margin-top:.5em;
+}
+
+.harris-modal__life-academy{
+  text-align: center;
+}
+
+.life-academy-modal{
+  position: fixed;
+  z-index: 5;
+  background-color: rgba(255,255,255,.94);
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all .3s ease-out;
+ 
+}
+
+.life-academy-modal--is-visible{
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.life-academy-modal__inner {
+  position: absolute;
+  top: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0 auto;
+  left: 50%;
+  width:100%;
+  height:100%;
+  overflow-y: auto;
+  padding-bottom:60px;
+}
+
+.life-academy-modal__inner--img {
+  border-radius: 80px;
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+  border: 6px solid hsla(0,0%,100%,.8);
+}
+
+.life-academy-modal__inner--img--no-radius{
+  border-radius: 0;
+  width:960px;
+  height:500px;
+}
+
+@media(min-width:800px) {
+
+  .life-academy-modal__inner {
+    height: 100%;
+    width: 75%;
+    overflow-y: auto;
+  }
+}
+
+@media(min-width:1010px) {
+
+  .life-academy-modal__inner {
+    width: 70%;
+  }
+}
+
+.life-academy-modal__description{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+.life-academy-modal__close{
+  position: absolute;
+  top:15px;
+  right:15px;
+  font-size:2rem;
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  color:#123241;
+}
+
+.life-academy-modal__close:hover{
+  color:#d59541;
+  cursor: pointer;
+}
+
+.life-academy-modal__life-academy-title{
+  margin-top:.5em;
+}
+
+.life-academy-modal__life-academy{
+  text-align: center;
 }

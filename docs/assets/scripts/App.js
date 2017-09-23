@@ -70,9 +70,9 @@
 
 	var _HarrisModal2 = _interopRequireDefault(_HarrisModal);
 
-	var _LifeAcademyModal = __webpack_require__(9);
+	var _LABModal = __webpack_require__(9);
 
-	var _LifeAcademyModal2 = _interopRequireDefault(_LifeAcademyModal);
+	var _LABModal2 = _interopRequireDefault(_LABModal);
 
 	var _TabContent = __webpack_require__(10);
 
@@ -87,7 +87,7 @@
 
 	var stickyHeader = new _StickyHeader2.default();
 	var modal = new _Modal2.default();
-	var lifeAcademyModal = new _LifeAcademyModal2.default();
+	var labModal = new _LABModal2.default();
 	var harrisModal = new _HarrisModal2.default();
 	var tabContent = new _TabContent2.default();
 
@@ -11343,7 +11343,7 @@
 
 	    this.openModalButton = (0, _jquery2.default)('.open-harris-modal');
 	    this.modal = (0, _jquery2.default)('.harris-modal');
-	    this.closeModalButton = (0, _jquery2.default)('.modal__close');
+	    this.closeModalButton = (0, _jquery2.default)('.harris-modal__close');
 	    this.events();
 	  }
 
@@ -11369,13 +11369,13 @@
 	  }, {
 	    key: 'openModal',
 	    value: function openModal() {
-	      this.modal.addClass('modal--is-visible');
+	      this.modal.addClass('harris-modal--is-visible');
 	      return false;
 	    }
 	  }, {
 	    key: 'closeModal',
 	    value: function closeModal() {
-	      this.modal.removeClass('modal--is-visible');
+	      this.modal.removeClass('harris-modal--is-visible');
 	    }
 	  }]);
 
@@ -11404,17 +11404,17 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var HarrisModal = function () {
-	  function HarrisModal() {
-	    _classCallCheck(this, HarrisModal);
+	var LABModal = function () {
+	  function LABModal() {
+	    _classCallCheck(this, LABModal);
 
 	    this.openModalButton = (0, _jquery2.default)('.open-life-academy-modal');
 	    this.modal = (0, _jquery2.default)('.life-academy-modal');
-	    this.closeModalButton = (0, _jquery2.default)('.modal__close');
+	    this.closeModalButton = (0, _jquery2.default)('.life-academy-modal__close');
 	    this.events();
 	  }
 
-	  _createClass(HarrisModal, [{
+	  _createClass(LABModal, [{
 	    key: 'events',
 	    value: function events() {
 	      //clicking the open modal button
@@ -11436,20 +11436,20 @@
 	  }, {
 	    key: 'openModal',
 	    value: function openModal() {
-	      this.modal.addClass('modal--is-visible');
+	      this.modal.addClass('life-academy-modal--is-visible');
 	      return false;
 	    }
 	  }, {
 	    key: 'closeModal',
 	    value: function closeModal() {
-	      this.modal.removeClass('modal--is-visible');
+	      this.modal.removeClass('life-academy-modal--is-visible');
 	    }
 	  }]);
 
-	  return HarrisModal;
+	  return LABModal;
 	}();
 
-	exports.default = HarrisModal;
+	exports.default = LABModal;
 
 /***/ },
 /* 10 */

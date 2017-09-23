@@ -1,11 +1,10 @@
-
 import $ from 'jquery';
 
- class HarrisModal{
+ class LABModal{
     constructor(){
       this.openModalButton = $('.open-life-academy-modal');
       this.modal = $('.life-academy-modal');
-      this.closeModalButton = $('.modal__close');
+      this.closeModalButton = $('.life-academy-modal__close');
       this.events();
     }
 
@@ -27,15 +26,16 @@ import $ from 'jquery';
     }
 
     openModal(){
-        this.modal.addClass('modal--is-visible');
+        this.modal.addClass('life-academy-modal--is-visible');
         return false;
     }
 
     closeModal(){
-        this.modal.removeClass('modal--is-visible');
+        this.modal.removeClass('life-academy-modal--is-visible');
     }
 
 
  }
-export default HarrisModal;
+export default LABModal;
+
 

@@ -39,3 +39,6 @@ p{
     text-align: center;
 }
 
+.jfCard-wrapper{
+            height:200px !important;
+        }

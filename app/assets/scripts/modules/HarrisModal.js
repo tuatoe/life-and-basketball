@@ -1,11 +1,10 @@
-
 import $ from 'jquery';
 
  class HarrisModal{
     constructor(){
       this.openModalButton = $('.open-harris-modal');
       this.modal = $('.harris-modal');
-      this.closeModalButton = $('.modal__close');
+      this.closeModalButton = $('.harris-modal__close');
       this.events();
     }
 
@@ -27,15 +26,16 @@ import $ from 'jquery';
     }
 
     openModal(){
-        this.modal.addClass('modal--is-visible');
+        this.modal.addClass('harris-modal--is-visible');
         return false;
     }
 
     closeModal(){
-        this.modal.removeClass('modal--is-visible');
+        this.modal.removeClass('harris-modal--is-visible');
     }
 
 
  }
 export default HarrisModal;
+
 
