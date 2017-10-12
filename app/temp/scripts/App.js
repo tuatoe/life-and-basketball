@@ -78,6 +78,10 @@
 
 	var _TabContent2 = _interopRequireDefault(_TabContent);
 
+	var _JotForm = __webpack_require__(11);
+
+	var _JotForm2 = _interopRequireDefault(_JotForm);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var mobileMenu = new _MobileMenu2.default();
@@ -90,6 +94,7 @@
 	var labModal = new _LABModal2.default();
 	var harrisModal = new _HarrisModal2.default();
 	var tabContent = new _TabContent2.default();
+	var jotForm = new _JotForm2.default();
 
 /***/ },
 /* 1 */
@@ -11502,6 +11507,50 @@
 	}();
 
 	exports.default = TabContent;
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _jquery = __webpack_require__(1);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var JotForm = function () {
+	    function JotForm() {
+	        _classCallCheck(this, JotForm);
+
+	        this.jot = (0, _jquery2.default)('.our-success__content-block__title');
+	        this.theForm();
+	    }
+
+	    _createClass(JotForm, [{
+	        key: 'theForm',
+	        value: function theForm() {
+	            (0, _jquery2.default)(document).ready(function () {
+	                if (this.jot) {
+	                    alert('yes');
+	                }
+	            });
+	        }
+	    }]);
+
+	    return JotForm;
+	}();
+
+	exports.default = JotForm;
 
 /***/ }
 /******/ ]);

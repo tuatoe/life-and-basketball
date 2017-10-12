@@ -6,6 +6,7 @@ import Modal from './modules/Modal';
 import HarrisModal from './modules/HarrisModal';
 import LABModal from './modules/LABModal';
 import TabContent from './modules/TabContent';
+import JotForm from './modules/JotForm';
 
 var mobileMenu = new MobileMenu();
 
@@ -17,3 +18,4 @@ var modal = new Modal();
 var labModal = new LABModal();
 var harrisModal = new HarrisModal();
 var tabContent = new TabContent();
+var jotForm = new JotForm();
