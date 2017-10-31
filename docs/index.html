@@ -17,7 +17,7 @@
     
     <link rel="stylesheet" href="assets/styles/lightbox-f9b66c559d.min.css"/>
     
-    <link rel="stylesheet" href="assets/styles/styles-2020ab4cbe.css"/>
+    <link rel="stylesheet" href="assets/styles/styles-7ce6c1643a.css"/>
 
      <script src="assets/scripts/slick.min.js"></script>
     
@@ -98,6 +98,8 @@
       </div>
     </div>
   </div>
+    
+    
 
 
     <div class="page-section page-section--blue">
@@ -136,10 +138,16 @@
 <script src="assets/scripts/App.js"></script>
     
     <script>
-    $(function(){
-         $('.slider').slick({
-         setting-name: setting-value
-    });
+   $(document).ready(function(){
+       $('.slider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          fade: true,
+          cssEase: 'linear'
+        });
+   })
     </script>
 
 </body>
