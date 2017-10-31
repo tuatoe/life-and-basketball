@@ -42,7 +42,7 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -78,10 +78,6 @@
 
 	var _TabContent2 = _interopRequireDefault(_TabContent);
 
-	var _JotForm = __webpack_require__(11);
-
-	var _JotForm2 = _interopRequireDefault(_JotForm);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var mobileMenu = new _MobileMenu2.default();
@@ -94,11 +90,10 @@
 	var labModal = new _LABModal2.default();
 	var harrisModal = new _HarrisModal2.default();
 	var tabContent = new _TabContent2.default();
-	var jotForm = new _JotForm2.default();
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 	 * jQuery JavaScript Library v2.2.4
@@ -9916,9 +9911,9 @@
 	}));
 
 
-/***/ },
+/***/ }),
 /* 2 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -9965,9 +9960,9 @@
 
 	exports.default = MobileMenu;
 
-/***/ },
+/***/ }),
 /* 3 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -10026,9 +10021,9 @@
 
 	exports.default = RevealOnScroll;
 
-/***/ },
+/***/ }),
 /* 4 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	/*!
 	Waypoints - 4.0.1
@@ -10789,9 +10784,9 @@
 	}())
 	;
 
-/***/ },
+/***/ }),
 /* 5 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -10897,9 +10892,9 @@
 
 	exports.default = StickyHeader;
 
-/***/ },
+/***/ }),
 /* 6 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 	 * jQuery Smooth Scroll - v2.1.2 - 2017-01-19
@@ -11242,9 +11237,9 @@
 
 
 
-/***/ },
+/***/ }),
 /* 7 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -11322,9 +11317,9 @@
 
 	exports.default = Modal;
 
-/***/ },
+/***/ }),
 /* 8 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -11389,9 +11384,9 @@
 
 	exports.default = HarrisModal;
 
-/***/ },
+/***/ }),
 /* 9 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -11416,7 +11411,9 @@
 	    this.openModalButton = (0, _jquery2.default)('.open-life-academy-modal');
 	    this.modal = (0, _jquery2.default)('.life-academy-modal');
 	    this.closeModalButton = (0, _jquery2.default)('.life-academy-modal__close');
+	    this.btn = (0, _jquery2.default)('.btn--orange');
 	    this.events();
+	    this.showsome();
 	  }
 
 	  _createClass(LABModal, [{
@@ -11449,6 +11446,11 @@
 	    value: function closeModal() {
 	      this.modal.removeClass('life-academy-modal--is-visible');
 	    }
+	  }, {
+	    key: 'showsome',
+	    value: function showsome() {
+	      console.log('hi');
+	    }
 	  }]);
 
 	  return LABModal;
@@ -11456,9 +11458,9 @@
 
 	exports.default = LABModal;
 
-/***/ },
+/***/ }),
 /* 10 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -11508,49 +11510,5 @@
 
 	exports.default = TabContent;
 
-/***/ },
-/* 11 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _jquery = __webpack_require__(1);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var JotForm = function () {
-	    function JotForm() {
-	        _classCallCheck(this, JotForm);
-
-	        this.jot = (0, _jquery2.default)('.our-success__content-block__title');
-	        this.theForm();
-	    }
-
-	    _createClass(JotForm, [{
-	        key: 'theForm',
-	        value: function theForm() {
-	            (0, _jquery2.default)(document).ready(function () {
-	                if (this.jot) {
-	                    alert('yes');
-	                }
-	            });
-	        }
-	    }]);
-
-	    return JotForm;
-	}();
-
-	exports.default = JotForm;
-
-/***/ }
+/***/ })
 /******/ ]);

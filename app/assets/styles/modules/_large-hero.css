@@ -18,8 +18,11 @@
       right:0;
       bottom:0;
       left: 0;
+      width:1920px;
       /*transform: translateY(-50%);*/
-      background-color: rgba(34,37,37,.6);
+      /*background-color: rgba(34,37,37,.6);*/
+      background:url('../../assets/images/dot.png') rgba(18, 50, 65,.6);
+      
       @mixin atMedium{
         padding-top:3.75rem;
       }

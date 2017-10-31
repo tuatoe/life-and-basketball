@@ -5,7 +5,10 @@ import $ from 'jquery';
       this.openModalButton = $('.open-life-academy-modal');
       this.modal = $('.life-academy-modal');
       this.closeModalButton = $('.life-academy-modal__close');
+      this.btn = $('.btn--orange');
       this.events();
+      this.showsome();
+    
     }
 
     events(){
@@ -33,6 +36,10 @@ import $ from 'jquery';
     closeModal(){
         this.modal.removeClass('life-academy-modal--is-visible');
     }
+     
+    showsome(){
+       console.log('hi');
+    } 
 
 
  }
