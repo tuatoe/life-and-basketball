@@ -18,7 +18,7 @@
   &--orange{
     background:$mainOrange;
        &:hover{
-          background-color:$mainGreen;
+          background-color:$mainBlue;
       }
     }
 
@@ -62,7 +62,24 @@
         }
     }
     
+    &--center-at-small{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:120px;
+    
+    @mixin atSmall{
+        position: absolute;
+        left:50%;
+         top:95px;
+        transform: translateX(-50%);
+    }
+    @mixin atMedium{
+        position: inherit;
+    }
 }
+}
+
 
 
 

@@ -1,8 +1,16 @@
 .page-section{
     padding:1.2rem 0;
+    position: relative;
   @mixin atMedium{
       padding:4.5rem 0;
   }
+    
+    &--no-padding-tb-until-small{
+        padding:1rem 0 5rem 0;
+        @mixin atMedium{
+            padding:1.5rem 0;
+        }
+    }
   &--no-b-padding-until-medium{
     padding-bottom:0;
     @mixin atMedium{
@@ -16,6 +24,9 @@
     }
   }
 
+    &--b-padding-until-medium{
+        padding-bottom:4.5rem;
+    }
     &--white{
         background-color:#FFF;
         /*background-image:url('../../assets/images/texture-bg.png');*/

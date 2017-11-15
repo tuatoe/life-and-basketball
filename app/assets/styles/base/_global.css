@@ -38,3 +38,23 @@ p{
 .center{
     text-align: center;
 }
+
+
+.pull-right{
+    float:none !important;
+    text-align: center;
+    
+    @mixin atSmall{
+        float:right!important;       
+    }
+}
+
+.pull-left{
+    float:none !important;
+    text-align: center;
+    
+    @mixin atSmall{
+        float:left!important;
+        
+    }
+}

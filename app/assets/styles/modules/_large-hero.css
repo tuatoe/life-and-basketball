@@ -19,8 +19,6 @@
       bottom:0;
       left: 0;
       width:1920px;
-      /*transform: translateY(-50%);*/
-      /*background-color: rgba(34,37,37,.6);*/
       background:url('../../assets/images/dot.png') rgba(18, 50, 65,.6);
       
       @mixin atMedium{
@@ -28,18 +26,26 @@
       }
       
       &__text-content{
-            width: 100%;
-        
-          @mixin atMedium{
-            width: 75rem;
+            width: 20rem;
             position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            text-align: center;
-            margin-top: -7rem;
-            left: 50%;
-            transform: translateX(-50%);
-          } 
+            top:51%;
+            left:2%;
+          
+          @mixin atSmall{
+             top:30%;
+              left:6%;
+          }
+          
+          @mixin atMedium{
+             width: 90rem;
+            top:50%;
+              transform: translate(-15%, -50%);
+              
+          }
+          
+          @mixin atLarge{
+                width: 90rem;
+          }
           
         &__logo {
             margin-top:0;
@@ -58,22 +64,28 @@
                 border-right:.125rem solid $mainGreen;
                 padding-right:2.1875rem;
                 display: block;
+              
             }
         }
 
       &__title{
-            font-weight:100;
-            color:#FFF;
-            font-size:1.6rem;
-            text-align: center;
-            margin:3rem  auto 1.5rem auto;
-            padding:0 1.125rem;
+            color:#fff;
+            font-size:1rem;
+          text-align: center;
+          
+          @mixin atSmall {
+              width:30rem;
+              text-align: center;
+              font-size:2rem;
+              
+          }
          
           @mixin atMedium{
               font-size:3rem;
               font-weight: 100;
-              width:45rem;
-              margin:-1rem auto;
+              width:50rem;
+              left:30%;
+             
           }
 
           @mixin atLarge{
@@ -83,7 +95,7 @@
               padding-left:2.1875rem;
               float: left;
               font-size: 3rem;
-              width:56rem;
+              width:50rem;
           }
 
       }
@@ -114,27 +126,16 @@
           }
 
            &__btn {
-               
-               margin:0 auto;
-               left:50%;
-               transform: translateX(-50%);
-               position: relative;
-               padding:.8rem 2.5rem .8rem .8rem !important;
-               border:0;
-               color:#FFF;
+   
+            padding: .8rem 2.5rem .8rem .8rem !important;
+            border: 0;
+            color: #FFF;
                
                @mixin atMedium {
                    margin:2.5rem auto;
                    left:0;
                    transform: translateX(0);
                }
-               
-               @mixin atLarge {
-                   float:left;
-                   margin-left:2.4rem;
-                   margin-top:1rem;
-               }
-            
           }
           
           .fa-play {
