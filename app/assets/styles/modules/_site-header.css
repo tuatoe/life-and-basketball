@@ -166,9 +166,18 @@
     transition: all .3s ease-out;
     position: relative;
     z-index: -10;
-    padding-top:5.625rem;
+    padding-top:6rem;
+      padding-bottom:.7rem;
     text-align: center;
 
+      @mixin atSmall{
+          padding-top:8rem;
+          padding-bottom:3.4rem;
+      }
+  @mixin atMedium{
+      padding-top:10rem;
+      padding-bottom:10.3rem;
+  }  
     @mixin atLarge{
       opacity: 1;
       z-index: 1;
@@ -180,6 +189,21 @@
       opacity: 1;
       z-index: 1;
       transform: scale(1);
+        
+        & li a{
+            font-size:.75rem !important;
+            
+            @mixin atSmall{
+                font-size:.9rem !important;
+            }
+            @mixin atMedium{
+                font-size:1.18rem !important;
+            }
+            
+            @mixin atLarge{
+                font-size:.85rem !important;
+            }
+        }
     }
   }
 
