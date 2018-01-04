@@ -1,0 +1,88 @@
+.modal{
+  position: fixed;
+  z-index: 5;
+  background-color: rgba(255,255,255,.94);
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  &__inner {
+    position: absolute;
+    top: 5%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    margin: 0 auto;
+    left: 50%;
+    width:100%; 
+    height:100%;
+    overflow-y: auto;
+    padding-bottom:60px;
+      &--img { 
+        border-radius: 80px;
+        overflow: hidden;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto;
+        position: relative;
+        border: 6px solid hsla(0,0%,100%,.8);
+          
+          &--no-radius{
+              border-radius: 0;
+              width:960px;
+              height:500px;
+          }
+      }
+  }
+
+    @mixin atMedium {
+    &__inner{
+        height:100%;
+        width:75%;
+        overflow-y: auto;
+    }  
+}
+    
+    @mixin atLarge{
+        &__inner{
+            width:70%;
+        }
+    }
+  &__description{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.65;
+  }
+
+  &__close{
+    position: absolute;
+    top:15px;
+    right:15px;
+    font-size:2rem;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    color:$mainBlue;
+    &:hover{
+      color:$mainOrange;
+      cursor: pointer;
+    }
+  }
+    &__life-academy-title{
+        margin-top:.5em;
+    } 
+    &__life-academy{
+        text-align: center;
+    }
+ 
+}

@@ -1,0 +1,49 @@
+.events {
+    &__content {
+        position: relative;
+        border:1px solid #ddd;
+        padding-bottom:15px;
+        background-color:#FFF;
+      
+        p {
+            text-align: left;
+            padding-top:2em;
+            color:#999;
+        }
+        
+        img {
+            border-radius: 0;
+            width:100%;
+        }
+        
+        &__inner-content {
+            padding:15px;
+            position: relative;
+            &__title {
+                color:$mainGreen;
+                margin:.6em 0 .2em 0;
+                padding:0;
+            }
+            
+            &__date {
+                color:#999;
+                font-size:.85rem;
+            }
+            
+            &__read-more {
+                color:$mainGreen;
+                font-weight: 300;
+                font-size:.85rem;
+                position: absolute;
+                right:20px;
+                bottom:20px;
+                bottom:0;
+                cursor: pointer;
+                
+                &:hover{
+                    color:$mainBlue;
+                }
+            }
+        }
+    }
+}

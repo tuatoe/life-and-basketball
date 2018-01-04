@@ -1,0 +1,24 @@
+ul.social-icons{
+    list-style: none;
+    text-align: center;
+    width:350px;
+    margin:0 auto;
+    position: relative;
+     li{
+        padding:10px;
+        border:1px solid $mainGreen;
+        float:left;
+        width:52px;
+         height: 48px;
+         margin-right:25px;
+         cursor: pointer;
+         border-radius: 5px;
+         &:last-child{
+             margin-right:0;
+         }
+         &:hover{
+             border:1px solid $mainOrange;
+             color:$mainOrange;
+         }
+    }
+}

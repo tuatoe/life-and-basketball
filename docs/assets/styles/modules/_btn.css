@@ -1,0 +1,85 @@
+.btn{
+    color:#FFF;
+    text-decoration: none;
+    padding: .5rem;
+    display: inline-block;
+    border:0;
+    cursor: pointer;
+    border-radius: .2rem;
+    font-weight: 300;
+    font-size: .85rem;
+
+    &--blue {
+        background-color:$mainBlue;
+      &:hover{
+          background-color:$mainOrange;
+      }
+    }    
+  &--orange{
+    background:$mainOrange;
+       &:hover{
+          background-color:$mainBlue;
+      }
+    }
+
+  &--green{
+      background-color:$mainGreen;
+      &:hover{
+          background-color:$mainOrange;
+      }
+  }
+      
+  &--large{
+    padding: 1.1rem 1.9rem;
+    @mixin atSmall{
+        font-size:1.25rem;
+    }
+  }
+    
+    &--center{
+        text-align: center;
+    }
+    
+    &--left{
+        text-align: left !important;
+    }
+    
+    &--read-more{
+        background-color:transparent;
+        color:$mainGreen;
+        
+        &:hover{
+            color:$mainBlue;
+        }
+        
+        &--blue{
+            color:$mainBlue;
+            text-align: center;
+            
+            &:hover{
+                color:#FFF;
+            }
+        }
+    }
+    
+    &--center-at-small{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:120px;
+    
+    @mixin atSmall{
+        position: absolute;
+        left:50%;
+         top:95px;
+        transform: translateX(-50%);
+    }
+    @mixin atMedium{
+        position: inherit;
+    }
+}
+}
+
+
+
+

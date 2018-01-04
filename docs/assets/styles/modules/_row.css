@@ -1,0 +1,262 @@
+.row{
+
+@mixin clearfix;
+
+&--t-padding{
+  padding-top:80px;
+}
+
+&--b-padding{
+   padding-bottom:80px;
+}
+    
+&--gutters{
+  margin-right:-65px;
+}
+
+&--gutters-large{
+    margin-right:-100px;
+}
+
+&--gutters-small{
+  margin-right:-45px;
+}
+
+&--gutters-super-small{
+    margin-right:-15px;
+}
+
+&--gutters > div{
+  padding-right:65px;
+}
+
+&--gutters-large > div{
+  padding-right:100px;
+}
+
+&--gutters-super-small > div{
+    padding-right:15px;
+}
+    
+&--gutters-small > div{
+  padding-right:45px;
+}
+
+&__b-margin-until-large{
+  margin-bottom:1rem;
+}
+  
+ @mixin atSmall {
+    &__b-margin-until-small {
+        margin-bottom:0;
+    }
+    
+    &__small-2 {
+        width:16.66%;
+        float:left;
+    }
+
+    &__small-3 {
+        width:25%;
+        float:left;
+
+    }
+
+    &__small-4 {
+        width:33.33%;
+        float:left;
+    }
+
+    &__small-6 {
+        width:50%;
+        float:left;
+    }
+
+    &__small-7 {
+        width:58.33%;
+        float:left;
+    }
+
+    &__small-8 {
+        width:66.66%;
+        float:left;
+    }
+
+    &__small-9 {
+        width:75%;
+        float:left;
+    }
+
+
+    &__small-10 {
+        width:83.33%;
+        float:left;
+    } 
+
+    &__small-11 {
+        width:91.66%;
+        float:left;
+    } 
+
+    &__small-12 {
+        width:100%;
+        float:left;
+    } 
+  }    
+    
+  @mixin atMedium {
+    &__b-margin-until-medium {
+        margin-bottom:0;
+    }
+    
+    &__medium-2 {
+        width:16.66%;
+        float:left;
+    }
+
+    &__medium-3 {
+        width:25%;
+        float:left;
+
+    }
+
+    &__medium-4 {
+        width:33.33%;
+        float:left;
+    }
+
+    &__medium-6 {
+        width:50%;
+        float:left;
+    }
+
+    &__medium-7 {
+        width:58.33%;
+        float:left;
+    }
+
+    &__medium-8 {
+        width:66.66%;
+        float:left;
+    }
+
+    &__medium-9 {
+        width:75%;
+        float:left;
+    }
+
+
+    &__medium-10 {
+        width:83.33%;
+        float:left;
+    } 
+
+    &__medium-11 {
+        width:91.66%;
+        float:left;
+    } 
+
+    &__medium-12 {
+        width:100%;
+        float:left;
+    } 
+  }
+
+  @mixin atLarge {
+
+    &__b-margin-until-large {
+        margin-bottom:0;
+    }
+      
+    &__large-4 {
+        width:08.33%;
+        float:left;
+    }
+    &__large-2 {
+        width:16.66%;
+        float:left;
+    }
+
+    &__large-3 {
+        width:25%;
+        float:left;
+
+    }
+
+    &__large-4 {
+        width:33.33%;
+        float:left;
+    }
+
+    &__large-6 {
+        width:50%;
+        float:left;
+    }
+
+    &__large-7 {
+        width:58.33%;
+        float:left;
+    }
+
+    &__large-8 {
+        width:66.66%;
+        float:left;
+    }
+
+    &__large-9 {
+        width:75%;
+        float:left;
+    }
+
+
+    &__large-10 {
+        width:83.33%;
+        float:left;
+    } 
+
+    &__large-11 {
+        width:91.66%;
+        float:left;
+    } 
+
+    &__large-12 {
+        width:100%;
+        float:left;
+    } 
+
+  }
+
+  /*begin equal height rules*/
+.flexbox &--equal-height-at-small{
+    @mixin atSmall{
+      display: flex;
+
+    }
+    & > div{
+      float:none;
+      display: flex;
+    }
+  }
+    
+  .flexbox &--equal-height-at-medium{
+    @mixin atMedium{
+      display: flex;
+
+    }
+    & > div{
+      float:none;
+      display: flex;
+    }
+  }
+
+  .flexbox &--equal-height-at-large{
+    @mixin atLarge{
+      display: flex;
+
+    }
+    & > div{
+      float:none;
+      display: flex;
+    }
+  }
+}

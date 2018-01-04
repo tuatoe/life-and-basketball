@@ -1,0 +1,11 @@
+.subscribe{
+    &.page-section__title{
+        padding:0 !important;
+        margin:0 !important;
+    }
+}
+
+.subscribe.page-section{
+    height:300px !important;
+    overflow: hidden;
+}

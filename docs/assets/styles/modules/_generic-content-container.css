@@ -1,0 +1,56 @@
+.generic-content-container{
+  p {
+    font-weight: 300;
+    line-height: 1.65;
+    margin:0 0 1.8rem 0;
+    text-align: center;
+   
+  }
+    
+    & h4{
+        margin-bottom:.5em;
+        color:$mainBlue;
+    }
+    
+ &--text-align-left{
+    p{
+        text-align: left;
+    }
+}
+    
+    &--white{
+        p{
+            color:#FFF;
+        }
+    }
+    @mixin atSmall {
+        font-size:1.125rem;
+    }
+  p a{
+    font-weight:700;
+  }
+    
+    img{
+        border-radius: 1.5rem;
+        max-width: 100%;
+        height:auto;
+    }
+    
+    
+    ul{
+        margin:0;
+        padding:0;
+        text-align: left;
+        li{
+             font-size:.875rem;
+            margin-bottom:.5em;
+        }
+    }
+    
+    &__center{
+        width:730px;
+        margin:0 auto;
+        text-align: center;
+    }
+
+}

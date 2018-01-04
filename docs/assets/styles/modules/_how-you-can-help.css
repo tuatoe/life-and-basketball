@@ -1,0 +1,172 @@
+.how-you-can-help {
+    &__tab-content{
+        display: none;
+        animation: fadeEffect 2s;
+        padding:1rem 1.5rem 1.5rem 1.5rem;
+        @mixin atLarge{
+            padding-bottom:0;
+        }
+        
+        
+        &.how-you-can-help__nav-tabs--current-tab{
+            animation: fadeEffect 2s;
+            display: block;
+        }
+        p{
+            color:#FFF;
+            line-height: 1.625;
+            font-weight: normal;
+            font-size:.875rem;
+            letter-spacing:  0.05em;
+            margin: 0 0 1.25em;
+            text-align: center;
+        }
+        
+       
+        
+        &__recruitment{
+            color:#FFF;
+            text-align: left;
+            p{
+                text-align: left;
+            }
+             
+        }
+        
+        &__donate{
+            color:#FFF;
+            text-align: left;
+            p{
+                text-align: left;
+            }
+        }
+        
+        &__sponsor-grid{
+            p{
+                text-align: center;
+            }
+            h3{
+                color:#FFF;
+                padding:1rem 1.5rem;
+                font-size:1.5rem;
+                text-align: center;
+                margin:0;
+                padding:1.5rem 0;
+            }
+            h6{
+                color:#FFF;
+                font-size:2.25rem;
+                border:1px solid #DDD;
+                text-align: center;
+                margin:0;
+                padding:1rem 0;
+                
+            }
+            
+            &__title-one{
+               
+                background-color: #f2dede;
+            }
+            
+            &__title-two{
+                 background-color: #d9edf7;
+            }
+            
+            &__title-three{
+                 background-color: #dff0d8;
+            }
+            
+            ul{
+                padding:0;
+                margin:0;
+                list-style: none;
+               
+                li{
+                    border:1px solid #DDD; 
+                    margin:0;
+                    padding:0;
+                    background-color: #FFF;
+                    p{
+                         color:#999;
+                        text-align: center;
+                        padding-top:1rem;
+                    }
+                }
+            }
+            
+            &__footer{
+                border:1px solid #DDD;
+                text-align: center;
+                background-color:#EEE;
+                padding:1rem 0;
+                
+                button{
+                    border-radius: 0;
+                    width:90%;
+                }
+            }
+           
+        }
+    }
+    
+   
+    
+    &__nav-tabs {
+        @mixin clearfix;
+        list-style: none;
+        width:100%;
+        margin:0;
+        padding:0;
+        
+        @mixin atSmall{
+              width:430px;
+              margin:0 auto;
+        }
+        
+        @mixin atMedium{
+             width:560px;
+        }
+        &__link{
+            display: block;
+            margin-bottom:.5rem;
+            font-family: 'Oswald', sans-serif;
+            border-right:2px solid $mainGreen;
+            cursor: pointer;
+            font-size:1.4rem;
+            background-color:#FFF;
+            padding:1rem .6rem;
+            text-align: center;
+            
+            @mixin atSmall{
+                 margin-bottom:2rem;
+                 font-size:1.4rem;
+                float: left;
+            }
+            
+            @mixin atMedium{
+                 font-size:1.5rem;
+                 padding:1.5rem;
+            }
+           
+            &--current {
+                background-color:$mainBlue;
+                color:#FFF;
+            }
+            
+            &:hover{
+               
+                background-color: $mainBlue;
+                color:#FFF;
+              
+            }
+           
+        }
+        
+    }
+
+}
+
+ @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }

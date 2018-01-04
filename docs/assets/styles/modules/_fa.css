@@ -1,0 +1,28 @@
+.fa{
+    color:#FFF;
+    font-size:1.5rem;
+    &--green{
+        color:$mainGreen;
+    }
+    &--orange{
+        color:$mainOrange;
+    }
+    
+    &.fa-question{
+        background-color: #FFF;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: .75rem;
+        color: $mainGreen;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        
+    }
+}
+
+.fa-edit:before,.fa-heart:before,
+.fa-star:before,.fa-pencil:before, 
+.fa-book:before,.fa-check-circle-o:before{
+    font-size:3rem;
+}
