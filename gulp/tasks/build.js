@@ -38,7 +38,6 @@ gulp.task('copyGeneralFiles',['deleteDistFolder'], function(){
 });
 
 //copy all the image files to the dist folder 
-
 gulp.task('optimizeImages',['deleteDistFolder'],function(){
     return gulp.src(['./app/assets/images/**/*'])
     .pipe(imagemin({
