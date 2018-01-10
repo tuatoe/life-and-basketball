@@ -27,7 +27,7 @@ gulp.task('deleteDistFolder',function(){
 gulp.task('copyGeneralFiles',['deleteDistFolder'], function(){
     var pathsToCopy = [
         './app/**/*',
-        '!./app/**/*',
+       '!./app/index.html',
         '!./app/assets/images/**',
         '!./app/assets/scripts/**',
         '!./app/temp',
@@ -62,7 +62,7 @@ gulp.task('useminTriger', ['deleteDistFolder'], function(){
 });
 
 gulp.task('usemin',['styles','scripts'],function(){
-    return gulp.src('./app/**/*')
+    return gulp.src('./app/index.html')
         .pipe(usemin({
         css:[function(){return rev()}, function(){return cssnano()}]
         //js: [function(){return rev()}, function(){return uglify()}]
